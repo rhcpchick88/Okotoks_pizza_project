@@ -14,8 +14,8 @@ img {
   border-radius: 180px;
   background-color: none;
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 2vh;
+  left: 2vw;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
           box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
 }
@@ -33,18 +33,20 @@ nav {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   position: absolute;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 100%;
 }
 
 button {
   width: 33vw;
   height: 4vh;
-  border: none;
+  border-style: none;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+          box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
   border-radius: 15em;
   margin-top: 13vh;
+  background-color: transparent;
+  font-family: 'Architects Daughter';
+  font-size: 2rem;
 }
 
 div {
@@ -55,5 +57,8 @@ h1 {
   position: absolute;
   color: black;
   font-family: 'Architects Daughter';
+  left: 30vw;
+  top: 5vh;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=style.css.map */
