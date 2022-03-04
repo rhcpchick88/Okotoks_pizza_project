@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Architects_daughter;
+  font-family: 'Architects Daughter';
   color: red;
 }
 
@@ -32,7 +32,6 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  repeat: auto-fit, minmax(400px, 1fr);
   position: absolute;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -40,14 +39,21 @@ nav {
   width: 100%;
 }
 
+button {
+  width: 33vw;
+  height: 4vh;
+  border: none;
+  border-radius: 15em;
+  margin-top: 13vh;
+}
+
 div {
   height: 1000px;
 }
 
-button {
-  height: 5vh;
-  margin-top: 14vh;
-  border: none;
-  border-radius: 5px;
+h1 {
+  position: absolute;
+  color: black;
+  font-family: 'Architects Daughter';
 }
 /*# sourceMappingURL=style.css.map */

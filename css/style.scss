@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 
 body {
-    font-family: Architects_daughter;
+    font-family: 'Architects Daughter';
     color: red;
 }
 
@@ -30,21 +30,25 @@ header {
 nav {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    repeat:(auto-fit, minmax(400px, 1fr));
     position: absolute;
     justify-content: center;
     width:100%;
+}
+
+button {
+    width:33vw;
+    height:4vh;
+    border:none;
+    border-radius:15em;
+    margin-top:13vh;
 }
 
 div {
     height: 1000px;
 }
 
-button {
-    height: 5vh;
-    margin-top:14vh;
-    border:none;
-    border-radius:5px;
-    
+h1 {
+    position:absolute;
+    color:black;
+    font-family: 'Architects Daughter';
 }
-
