@@ -27,3 +27,14 @@ header {
     position:relative;
 }
 
+nav {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    repeat:(auto-fit, minmax(250px, 1fr));
+    position: absolute;
+    margin-top:50px;
+}
+
+div {
+    height: 1000px;
+}
