@@ -27,6 +27,7 @@ img {
     top: 2vh;
     left: 2vw;
     box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+    animation: spin 8s linear infinite;
 }
 
 header {
@@ -34,27 +35,25 @@ header {
     background-color:rgb(255, 0, 0);
     height:19vh;
     position:relative;
-}
 
-nav {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: absolute;
-    width:100%;
-}
+    nav {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: absolute;
+        width:100%;      
 
-button {
-    width:33vw;
-    height:4vh;
-    border-style:none;
-    box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
-    border-radius:15em;
-    margin-top:13vh;
-    background-color:transparent;
-    font-family: 'Architects Daughter';
-    font-size: 2rem;
-
-
+        button {
+        width:33vw;
+        height:4vh;
+        border-style:none;
+        box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+        border-radius:15em;
+        margin-top:13vh;
+        background-color:transparent;
+        font-family: 'Architects Daughter';
+        font-size: 2rem;
+        }
+    }
 }
 
 div {
@@ -68,8 +67,4 @@ h1 {
     left: 30vw;
     top:5vh;
     font-size:3rem;
-}
-
-img {
-    animation: spin 8s linear infinite;
 }

@@ -40,6 +40,8 @@ img {
   left: 2vw;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
           box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
 }
 
 header {
@@ -49,7 +51,7 @@ header {
   position: relative;
 }
 
-nav {
+header nav {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -58,7 +60,7 @@ nav {
   width: 100%;
 }
 
-button {
+header nav button {
   width: 33vw;
   height: 4vh;
   border-style: none;
@@ -82,10 +84,5 @@ h1 {
   left: 30vw;
   top: 5vh;
   font-size: 3rem;
-}
-
-img {
-  -webkit-animation: spin 8s linear infinite;
-          animation: spin 8s linear infinite;
 }
 /*# sourceMappingURL=style.css.map */
