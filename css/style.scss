@@ -19,7 +19,12 @@ body {
     color: red;
 }
 
-#logo {
+img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo > img {
     border-style:none;
     border-radius: 180px;
     background-color:none;
@@ -28,6 +33,8 @@ body {
     left: 2vw;
     box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
     animation: spin 8s linear infinite;
+    width: 200px;
+    height:200px;
 }
 
 header {
@@ -54,10 +61,6 @@ header {
         font-size: 2rem;
         }
     }
-}
-
-div {
-    height: 1000px;
 }
 
 h1 {
@@ -88,32 +91,74 @@ iframe {
     }
 }
 
-.classic {
+#main_grid {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
-.veggie {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+    #classic {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column:1 / 2;
+        grid-row:1 / 2;
 
-.specialty {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+        .a {
+            grid-column: 1 / 1;
+            grid-row: 1 / 1;
+        }
+        
+        .b {
+            grid-column:3 / 4;
+            grid-row:1 / 1;
+        }
+        
+        .c {
+            grid-column: 2 / 3;
+            grid-row:2 / 3;
+        }
+        
+        .d {
+            grid-column:3 / 4;
+            grid-row:3 / 4;
+        }
+        
+        .e {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+    }
 
-.drinks {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
+    #veggie {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column:2 / 3;
+        grid-row:2 / 3;
+    }
+    
+    #specialty {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column:1 /2;
+        grid-row:3 / 4;
+    }
 
-.sides {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    #sides {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column:2 / 3;
+        grid-row:4 / 5;
+    }
+
+    #drinks {
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column:1 / 2;
+        grid-row:5 / 6;
+    }
+    
 }
