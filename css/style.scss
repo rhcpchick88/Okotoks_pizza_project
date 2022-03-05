@@ -19,7 +19,7 @@ body {
     color: red;
 }
 
-img {
+#logo {
     border-style:none;
     border-radius: 180px;
     background-color:none;
@@ -88,3 +88,8 @@ iframe {
     }
 }
 
+.menu {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}

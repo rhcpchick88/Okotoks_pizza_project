@@ -31,7 +31,7 @@ body {
   color: red;
 }
 
-img {
+#logo {
   border-style: none;
   border-radius: 180px;
   background-color: none;
@@ -103,5 +103,14 @@ iframe {
   background: none !important;
   height: 500px;
   width: 600px;
+}
+
+.menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
 }
 /*# sourceMappingURL=style.css.map */
