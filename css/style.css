@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 * {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 @-webkit-keyframes spin {
@@ -41,8 +43,8 @@ img {
   border-radius: 180px;
   background-color: none;
   position: fixed;
-  top: 2vh;
-  left: 2vw;
+  top: 15px;
+  left: 20px;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
           box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
   -webkit-animation: spin 8s linear infinite;
@@ -52,10 +54,9 @@ img {
 }
 
 header {
-  width: 100%;
   background-color: red;
-  height: 19vh;
   position: relative;
+  height: 300px;
 }
 
 header nav {
@@ -63,18 +64,15 @@ header nav {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  position: absolute;
-  width: 100%;
+  position: relative;
+  top: 230px;
 }
 
 header nav button {
-  width: 33vw;
-  height: 4vh;
   border-style: none;
   -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
           box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
-  border-radius: 15em;
-  margin-top: 13vh;
+  border-radius: 30px;
   background-color: transparent;
   font-family: 'Architects Daughter';
   font-size: 2rem;
@@ -84,9 +82,9 @@ h1 {
   position: absolute;
   color: black;
   font-family: 'Architects Daughter';
-  left: 30vw;
-  top: 5vh;
   font-size: 3rem;
+  left: 30%;
+  top: 30%;
 }
 
 iframe {
@@ -111,126 +109,66 @@ iframe {
 #main_grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  position: relative;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 #main_grid #classic {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-}
-
-#main_grid #classic .a {
-  -ms-grid-column: 1;
-  grid-column: 1 / 1;
-  -ms-grid-row: 1;
-  grid-row: 1 / 1;
-}
-
-#main_grid #classic .b {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 1;
-  grid-row: 1 / 1;
-}
-
-#main_grid #classic .c {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-}
-
-#main_grid #classic .d {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-}
-
-#main_grid #classic .e {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  position: relative;
 }
 
 #main_grid #veggie {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  position: relative;
 }
 
 #main_grid #specialty {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 /2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
+  position: relative;
 }
 
 #main_grid #sides {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 4;
-  -ms-grid-row-span: 1;
-  grid-row: 4 / 5;
+  position: relative;
 }
 
 #main_grid #drinks {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
+  position: relative;
+}
+
+#main_grid .pizza_header {
+  position: relative;
+  font-family: 'architects daughter';
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#main_grid .item_1 {
+  position: relative;
+  left: 10%;
+}
+
+#main_grid .item_2 {
+  position: relative;
+}
+
+#main_grid .item_3 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main_grid .item_4 {
+  position: relative;
+}
+
+#main_grid .item_5 {
+  position: relative;
+}
+
+#main_grid img {
+  width: 300px;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */

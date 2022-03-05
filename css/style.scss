@@ -1,6 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
@@ -29,8 +31,8 @@ img {
     border-radius: 180px;
     background-color:none;
     position:fixed;
-    top: 2vh;
-    left: 2vw;
+    top:15px;
+    left:20px;
     box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
     animation: spin 8s linear infinite;
     width: 200px;
@@ -38,24 +40,20 @@ img {
 }
 
 header {
-    width:100%;
     background-color:rgb(255, 0, 0);
-    height:19vh;
     position:relative;
+    height:300px;
 
     nav {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
-        position: absolute;
-        width:100%;      
+        position:relative;
+        top:230px;
 
         button {
-        width:33vw;
-        height:4vh;
         border-style:none;
         box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
-        border-radius:15em;
-        margin-top:13vh;
+        border-radius:30px;
         background-color:transparent;
         font-family: 'Architects Daughter';
         font-size: 2rem;
@@ -67,9 +65,9 @@ h1 {
     position:absolute;
     color:black;
     font-family: 'Architects Daughter';
-    left: 30vw;
-    top:5vh;
     font-size:3rem;
+    left:30%;
+    top:30%;
 }
 
 iframe {
@@ -92,73 +90,65 @@ iframe {
 }
 
 #main_grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        display:grid;
+        position:relative;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns:1fr;
 
     #classic {
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column:1 / 2;
-        grid-row:1 / 2;
-
-        .a {
-            grid-column: 1 / 1;
-            grid-row: 1 / 1;
-        }
-        
-        .b {
-            grid-column:3 / 4;
-            grid-row:1 / 1;
-        }
-        
-        .c {
-            grid-column: 2 / 3;
-            grid-row:2 / 3;
-        }
-        
-        .d {
-            grid-column:3 / 4;
-            grid-row:3 / 4;
-        }
-        
-        .e {
-            grid-column: 1 / 2;
-            grid-row: 3 / 4;
-        }
+        position:relative;
     }
 
     #veggie {
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column:2 / 3;
-        grid-row:2 / 3;
+        position:relative;
     }
-    
+        
     #specialty {
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column:1 /2;
-        grid-row:3 / 4;
+        position:relative;
     }
 
     #sides {
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column:2 / 3;
-        grid-row:4 / 5;
+        position:relative;
     }
 
     #drinks {
-        display:grid;
-        grid-template-columns:1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-column:1 / 2;
-        grid-row:5 / 6;
+        position:relative;
+    }
+
+    .pizza_header {
+        position:relative;
+        font-family:'architects daughter';
+        color:black;
+        font-size:4rem;
+        text-align:center;
+    }
+
+    .item_1 {
+        position:relative;
+        left:10%;
+    }
+
+    .item_2 {
+        position:relative;
+    }
+
+    .item_3 {
+        position:relative;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .item_4 {
+        position:relative;
+    }
+
+    .item_5 {
+        position:relative;
     }
     
+    img {
+        width:300px;
+        height:300px;
+    }
 }
+
