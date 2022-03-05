@@ -85,4 +85,23 @@ h1 {
   top: 5vh;
   font-size: 3rem;
 }
+
+iframe {
+  width: 600px;
+  height: 500px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.mapouter .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
 /*# sourceMappingURL=style.css.map */
