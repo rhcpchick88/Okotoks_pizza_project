@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+body {
+  font-family: 'Architects Daughter';
+  color: red;
+}
+
+#logo > img {
+  border-style: none;
+  border-radius: 180px;
+  background-color: none;
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+          box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
+  width: 200px;
+  height: 200px;
+}
+
+header {
+  background: center url("/images/background.PNG");
+  position: relative;
+  height: 300px;
+}
+
+header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  top: 230px;
+}
+
+header nav button {
+  border-style: none;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+          box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+  border-radius: 30px;
+  background-color: transparent;
+  font-family: 'Architects Daughter';
+  font-size: 2rem;
+}
+
+#welcome {
+  left: 30%;
+  top: 20%;
+  position: absolute;
+  font-family: 'Architects Daughter';
+  font-size: 3em;
+  inline-size: 65%;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#main_grid {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#main_grid #classic {
+  position: relative;
+}
+
+#main_grid #veggie {
+  position: relative;
+}
+
+#main_grid #specialty {
+  position: relative;
+}
+
+#main_grid #sides {
+  position: relative;
+}
+
+#main_grid #drinks {
+  position: relative;
+}
+
+#main_grid .pizza_header {
+  position: relative;
+  font-family: 'architects daughter';
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+
+#main_grid .item_1 {
+  position: relative;
+  left: 10%;
+}
+
+#main_grid .item_2 {
+  position: relative;
+}
+
+#main_grid .item_3 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#main_grid .item_4 {
+  position: relative;
+}
+
+#main_grid .item_5 {
+  position: relative;
+}
+
+#main_grid img {
+  width: 300px;
+  height: 300px;
+}
+/*# sourceMappingURL=menu.css.map */

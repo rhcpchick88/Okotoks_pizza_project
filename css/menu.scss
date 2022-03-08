@@ -21,11 +21,6 @@ body {
     color: red;
 }
 
-img {
-    width: 50px;
-    height: 50px;
-}
-
 #logo > img {
     border-style:none;
     border-radius: 180px;
@@ -40,7 +35,7 @@ img {
 }
 
 header {
-    background-color:rgb(255, 0, 0);
+    background: center url("/images/background.PNG");
     position:relative;
     height:300px;
 
@@ -61,39 +56,29 @@ header {
     }
 }
 
-h1 {
-    position:absolute;
-    color:black;
-    font-family: 'Architects Daughter';
-    font-size:3rem;
+#welcome {
+
     left:30%;
-    top:30%;
+    top:20%;
+    position:absolute;
+
+    font-family: 'Architects Daughter';
+    font-size: 3em;
+    inline-size: 65%;
+    border:none;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:15px;
+    padding-right:15px;
 }
 
-iframe {
-    width:600px;
-    height:500px;
-}
 
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:500px;
-    width:600px;
-    
-    .gmap_canvas {
-        overflow:hidden;
-        background:none!important;
-        height:500px;
-        width:600px;
-    }
-}
 
 #main_grid {
-        display:grid;
-        position:relative;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns:1fr;
+    display:grid;
+    position:relative;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr;
 
     #classic {
         position:relative;
@@ -145,10 +130,9 @@ iframe {
     .item_5 {
         position:relative;
     }
-    
+
     img {
         width:300px;
         height:300px;
     }
 }
-

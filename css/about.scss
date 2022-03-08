@@ -1,0 +1,93 @@
+* {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(359deg);
+    }
+}
+
+body {
+    font-family: 'Architects Daughter';
+    color: red;
+}
+
+#logo {
+    border-style:none;
+    border-radius: 180px;
+    background-color:none;
+    position:fixed;
+    top:15px;
+    left:20px;
+    box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+    animation: spin 8s linear infinite;
+    width: 200px;
+    height:200px;
+}
+
+header {
+    background: center url("/images/background.PNG");
+    position:relative;
+    height:300px;
+
+    nav {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position:relative;
+        top:230px;
+
+        button {
+        border-style:none;
+        box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
+        border-radius:30px;
+        background-color:transparent;
+        font-family: 'Architects Daughter';
+        font-size: 2rem;
+        }
+    }
+}
+
+
+#welcome {
+
+    left:30%;
+    top:20%;
+    position:absolute;
+
+    font-family: 'Architects Daughter';
+    font-size: 3em;
+    inline-size: 65%;
+    border:none;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+iframe {
+    width:600px;
+    height:500px;
+}
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:500px;
+    width:600px;
+    
+    .gmap_canvas {
+        overflow:hidden;
+        background:none!important;
+        height:500px;
+        width:600px;
+    }
+}
