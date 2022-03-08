@@ -5,7 +5,7 @@
     overflow-x: hidden;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@600&display=swap');
 
 @keyframes spin {
     0% {
@@ -16,12 +16,23 @@
     }
 }
 
-body {
-    font-family: 'Architects Daughter';
-    color: red;
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translatex(-100%);
+    }
 }
 
-#logo > img {
+
+body {
+    font-family: 'Josefin Sans';
+    color: rgb(0, 0, 0);
+    background-color:black;
+}
+
+#logo {
     border-style:none;
     border-radius: 180px;
     background-color:none;
@@ -37,39 +48,50 @@ body {
 header {
     background: center url("/images/background.PNG");
     position:relative;
-    height:300px;
+    height:400px;
 
     nav {
+        width:100%;
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
         position:relative;
-        top:230px;
+        top:73%;
+        text-align:center;
 
         button {
-        border-style:none;
-        box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
-        border-radius:30px;
-        background-color:transparent;
-        font-family: 'Architects Daughter';
-        font-size: 2rem;
+        border:solid black 4px;
+        border-radius:20px;
+        font-family: 'Josefin Sans';
+        background-color: rgba(250, 235, 215, 0.26);
+        font-size: 4rem;
+        width:75%;
+        padding-top:15px;
         }
     }
 }
 
 #welcome {
-
-    left:30%;
-    top:20%;
+    left:22%;
+    top:15%;
     position:absolute;
+    font-family: 'Josefin Sans';
+    font-size:5rem;
+    text-align:center;
+    border:solid black 6px;
+    background-color: rgba(250, 235, 215, 0.377);
+    border-radius:20px;
+    width:74%;
+    padding-top:7px;
+    padding-bottom:3px;
+}
 
-    font-family: 'Architects Daughter';
-    font-size: 3em;
-    inline-size: 65%;
-    border:none;
-    padding-top:20px;
-    padding-bottom:20px;
-    padding-left:15px;
-    padding-right:15px;
+#marquee {
+    overflow:none;
+    font-size:3em;
+    white-space:nowrap;
+    animation: marquee 13s linear infinite;
+    color:white;
+    margin-top:10px;
 }
 
 
