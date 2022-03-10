@@ -137,7 +137,6 @@ header {
   background: center url("/images/background.PNG");
   position: relative;
   height: 400px;
-  color: black;
 }
 
 header nav {
@@ -152,10 +151,10 @@ header nav {
 }
 
 header nav button {
-  border: solid black 4px;
   border-radius: 20px;
   font-family: 'Josefin Sans';
-  background-color: rgba(250, 235, 215, 0.26);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.459);
   font-size: 4rem;
   width: 75%;
   padding-top: 15px;
@@ -163,13 +162,12 @@ header nav button {
 
 #welcome {
   left: 22%;
-  top: 15%;
+  top: 25%;
   position: absolute;
   font-family: 'Josefin Sans';
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
-  border: solid black 6px;
-  background-color: rgba(250, 235, 215, 0.377);
+  background-color: rgba(0, 0, 0, 0.459);
   border-radius: 20px;
   width: 74%;
   padding-top: 7px;
@@ -186,6 +184,14 @@ header nav button {
   color: white;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+#marquee a:link {
+  color: white;
+}
+
+#marquee a:visited {
+  color: red;
 }
 
 iframe {

@@ -42,7 +42,7 @@
 
 body {
     font-family: 'Josefin Sans';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color:black;
 }
 
@@ -73,10 +73,10 @@ header {
         text-align:center;
 
         button {
-        border:solid black 4px;
         border-radius:20px;
         font-family: 'Josefin Sans';
-        background-color: rgba(250, 235, 215, 0.26);
+        color:white;
+        background-color: rgba(0, 0, 0, 0.459);
         font-size: 4rem;
         width:75%;
         padding-top:15px;
@@ -86,13 +86,12 @@ header {
 
 #welcome {
     left:22%;
-    top:15%;
+    top:25%;
     position:absolute;
     font-family: 'Josefin Sans';
-    font-size:5rem;
+    font-size:6rem;
     text-align:center;
-    border:solid black 6px;
-    background-color: rgba(250, 235, 215, 0.377);
+    background-color: rgba(0, 0, 0, 0.459);
     border-radius:20px;
     width:74%;
     padding-top:7px;
@@ -105,9 +104,9 @@ header {
     display:grid;
     position:relative;
     grid-template-rows: 75px;
-    grid-auto-rows:auto;
+    grid-auto-rows:1800px;
     color:white;
-    justify-content:flex;
+    width:100%;
     padding:2px;
 
     #marquee {
@@ -133,89 +132,118 @@ header {
         position:relative;
         grid-row-start: 2;
         grid-row-end:3;
+        background-image:url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+        background-repeat:no-repeat;
+        background-size: cover;
     }
 
     #veggie {
         position:relative;
         grid-row-start: 3;
         grid-row-end: 4;
+        background-image:url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+        background-repeat:no-repeat;
+        background-size: cover;
     }
         
     #specialty {
         position:relative;
         grid-row-start: 4;
         grid-row-end: 5;
+        background-image:url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+        background-repeat:no-repeat;
+        background-size: cover;
     }
 
     #sides {
         position:relative;
         grid-row-start:5;
         grid-row-end:6;
+        background-image:url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+        background-repeat:no-repeat;
+        background-size: cover;
     }
 
     #drinks {
         position:relative;
         grid-row-start:6;
         grid-row-end:7;
+                background-image:url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+        background-repeat:no-repeat;
+        background-size: cover;
     }
 
     .pizza_header {
         position:relative;
         font-family:'Josefin Sans';
-        font-size:2.3rem;
+        font-size:2.1rem;
+        color:rgb(255, 255, 255);
         text-align:center;
         padding:45px;
         border:solid white 3px;
-        border-radius:30px;
         width:100%;
-        margin:1px;
+        background:rgba(0, 0, 0, 0.459);
     }
 
     .item_1 {
-        position:relative;
+        position:absolute;
+        width:360px;
+        height:475px;
         left:10%;
-        top:2.5%;
-        display:block;
-        width:300px;
+        top:12%;
+        font-size:.5rem;
+        border:solid white 2px;
+        border-radius:15px;
+        box-shadow:5px 5px 50px rgba(255, 255, 255, 0.24);
+        padding:2%;
     }
 
     .item_2 {
-        position:relative;
-        left:60%;
-        bottom: 16.3%;
-        display:block;
-        width:300px;
+        position:absolute;
+        width:360px;
+        height:475px;
+        left:55%;
+        top:12%;
+        border:solid white 2px;
+        border-radius:15px;
+        box-shadow:5px 5px 50px rgba(255, 255, 255, 0.322);
+        padding:2%;
     }
 
     .item_3 {
-        position:relative;
-        left:35%;
-        bottom:10%;
-        display:block;
-        width:300px;
+        position:absolute;
+        width:360px;
+        height:475px;
+        bottom:32%;
+        left:34%;
+        border:solid white 2px;
+        border-radius:15px;
+        box-shadow:5px 5px 50px rgba(255, 255, 255, 0.322);
+        padding:2%;
     }
 
     .item_4 {
-        position:relative;
-        left:60%;
-        bottom:3.5%;
-        display:block;
-        width:300px;
+        position:absolute;
+        width:360px;
+        height:475px;
+        left:10%;
+        bottom:3%;
+        border:solid white 2px;
+        border-radius:15px;
+        box-shadow:5px 5px 50px rgba(255, 255, 255, 0.322);
+        padding:2%;
     }
 
     .item_5 {
-        position:relative;
-        left:10%;
-        bottom:21%;
-        display:block;
-        width:300px;
-    }
-
-
-
-    img {
-        width:300px;
-        height:300px;
+        position:absolute;
+        width:360px;
+        height:475px;
+        left:55%;
+        bottom:3%;
+        border:solid white 2px;
+        border-radius:15px;
+        box-shadow:5px 5px 50px rgba(255, 255, 255, 0.322);
+        padding:2%;
     }
 
     p {
@@ -224,4 +252,5 @@ header {
         font-family:'Josefin Sans';
         font-size:2.3rem;
     }
+
 }
