@@ -18,14 +18,9 @@
 }
 
 @keyframes marquee {
-    from {
-        margin-left:55%;
-        width:45%;
-    }
-    to {
-        margin-left:0%;
-        width: 100%;
-    }
+    0% { left:55%; width:45% }
+    50% { left:1%; width:99%; }
+    100% { left:55%; width: 45%;}
 }
 
 @keyframes slider {
@@ -60,7 +55,9 @@ body {
 }
 
 header {
-    background: center url("/images/background.PNG");
+    background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+    background-repeat:no-repeat;
+    background-size: 1000px;
     position:relative;
     height:400px;
 
