@@ -288,12 +288,22 @@ header {
 
 #back_to_top {
     position:fixed;
-    font-family:'Josefin Sans';
-    color:white;
-    font-size:4rem;
-    bottom:0%;
-    left:58%;
-    z-index: 1;
+    bottom:1%;
+    left:39%;
+    width:auto;
+    height:62px;
+    padding:15px;
+    margin:10px;
+    background-color:black;
+    border:none;
+    border-radius:15px;
+    text-align:center;
+
+    a{
+        font-size:2rem;
+        color:white;
+        font-family:'Josefin Sans';
+    }
 }
 
 
