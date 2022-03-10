@@ -4,6 +4,8 @@
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes spin {
@@ -47,6 +49,66 @@
   100% {
     -webkit-transform: translatex(-100%);
             transform: translatex(-100%);
+  }
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }
 
@@ -124,183 +186,45 @@ header nav button {
   margin-top: 10px;
 }
 
-#main_grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-}
-
-#main_grid .gallery {
-  position: relative;
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-}
-
-#main_grid .gallery .slider {
-  position: relative;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-#main_grid .gallery .slider .slider__viewport {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox {
-  display: block;
-  position: relative;
-  -webkit-perspective: 100vw;
-          perspective: 100vw;
-  margin: 0 auto;
-  width: 33.3333333333%;
-  max-width: 280px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  z-index: 0;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider__viewbox::before {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  content: "";
-  height: 0;
-  padding-bottom: 100%;
-  width: 100%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox input.slider-target {
-  display: none;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0) rotateY(45deg);
-          transform: translate3d(0, 0, 0) rotateY(45deg);
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.15s;
-  transition: -webkit-transform 0.6s cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.15s;
-  transition: transform 0.6s cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.15s;
-  transition: transform 0.6s cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.15s, -webkit-transform 0.6s cubic-bezier(0.62, 0.28, 0.23, 0.99) 0.15s;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure {
-  position: relative;
-  width: 100%;
-  height: 100%;
+figure {
   margin: 0;
-  padding: 0;
+  background: #101010;
+  font-weight: 100;
+}
+
+#pizza_gallery {
+  width: 100%;
   overflow: hidden;
 }
 
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item-figure__image {
-  position: absolute;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  opacity: 1;
+#pizza_gallery .slider {
+  position: relative;
+  width: 500%;
+  font-size: 0;
+  -webkit-animation: 30s slider infinite;
+          animation: 30s slider infinite;
 }
 
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item-figure__caption {
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #fff;
-  padding: 24px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
-  background-image: linear-gradient(0deg, #000 0%, transparent 100%);
-  z-index: 2;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item-figure__caption a {
+#pizza_gallery .slider figure {
+  width: 20%;
+  height: auto;
   display: inline-block;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: bold;
+  position: inherit;
+}
+
+#pizza_gallery .slider figure img {
+  width: 100%;
+  height: 650px;
+}
+
+#pizza_gallery .slider figure figcaption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item-figure__caption span {
-  display: block;
-  font-size: 14px;
-  line-height: 16px;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(1) {
-  left: 0%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(2) {
-  left: 50%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(3) {
-  left: 100%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(4) {
-  left: 150%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(5) {
-  left: 200%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(6) {
-  left: 250%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(7) {
-  left: 300%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-item:nth-child(8) {
-  left: 350%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-target:nth-of-type(8):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(8) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(7):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(7) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(6):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(6) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(5):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(5) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(4):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(4) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(3):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(3) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(2):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(2) .wgh-slider-item__inner, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(1):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(1) .wgh-slider-item__inner {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-target:nth-of-type(8):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(8) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(7):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(7) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(6):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(6) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(5):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(5) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(4):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(4) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(3):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(3) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(2):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(2) .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(1):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(1) .wgh-slider-item__inner::before {
-  -webkit-transform: translate(0, 24px);
-          transform: translate(0, 24px);
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-target:nth-of-type(8):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(8) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(7):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(7) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(6):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(6) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(5):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(5) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(4):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(4) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(3):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(3) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(2):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(2) .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(1):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(1) .wgh-slider-item__inner::after {
-  background-position: -50% 0%;
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-target:nth-of-type(8):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(8) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(7):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(7) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(6):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(6) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(5):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(5) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(4):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(4) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(3):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(3) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(2):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(2) ~ .wgh-slider-item .wgh-slider-item__inner::before, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(1):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(1) ~ .wgh-slider-item .wgh-slider-item__inner::before {
-  -webkit-transform: translate(24px, 12px);
-          transform: translate(24px, 12px);
-}
-
-#main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .slider-target:nth-of-type(8):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(8) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(7):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(7) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(6):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(6) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(5):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(5) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(4):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(4) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(3):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(3) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(2):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(2) ~ .wgh-slider-item .wgh-slider-item__inner::after, #main_grid .gallery .slider .slider__viewport .slider__viewbox .slider-item .slider-item-figure .wgh-slider-target:nth-of-type(1):checked ~ .wgh-slider__viewport .wgh-slider-item:nth-child(1) ~ .wgh-slider-item .wgh-slider-item__inner::after {
-  background-position: -100% 0%;
+  width: 100%;
+  font-size: 3rem;
+  padding: 10px;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
