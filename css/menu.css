@@ -4,6 +4,8 @@
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes spin {
@@ -29,24 +31,84 @@
 }
 
 @-webkit-keyframes marquee {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+  from {
+    margin-left: 55%;
+    width: 45%;
   }
-  100% {
-    -webkit-transform: translatex(-100%);
-            transform: translatex(-100%);
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
 @keyframes marquee {
+  from {
+    margin-left: 55%;
+    width: 45%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slider {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
   }
   100% {
-    -webkit-transform: translatex(-100%);
-            transform: translatex(-100%);
+    left: -400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }
 
@@ -113,52 +175,71 @@ header nav button {
   padding-bottom: 3px;
 }
 
-#marquee {
-  overflow: none;
+#main_grid {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-rows: 75px;
+      grid-template-rows: 75px;
+  grid-auto-rows: auto;
+}
+
+#main_grid #marquee {
+  position: absolute;
+  overflow: hidden;
   font-size: 3em;
   white-space: nowrap;
   -webkit-animation: marquee 13s linear infinite;
           animation: marquee 13s linear infinite;
   color: white;
-  margin-top: 10px;
-}
-
-#main_grid {
-  display: -ms-grid;
-  display: grid;
-  position: relative;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 10px;
 }
 
 #main_grid #classic {
   position: relative;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 #main_grid #veggie {
   position: relative;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 #main_grid #specialty {
   position: relative;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
 }
 
 #main_grid #sides {
   position: relative;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
 }
 
 #main_grid #drinks {
   position: relative;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+  grid-row-end: 7;
 }
 
 #main_grid .pizza_header {
   position: relative;
-  font-family: 'architects daughter';
-  color: black;
+  font-family: 'Josefin Sans';
+  color: white;
   font-size: 4rem;
   text-align: center;
+  padding: 50px;
 }
 
 #main_grid .item_1 {
@@ -168,20 +249,25 @@ header nav button {
 
 #main_grid .item_2 {
   position: relative;
+  left: 60%;
+  bottom: 19%;
 }
 
 #main_grid .item_3 {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  left: 34%;
+  bottom: 10%;
 }
 
 #main_grid .item_4 {
   position: relative;
+  left: 60%;
 }
 
 #main_grid .item_5 {
   position: relative;
+  left: 10%;
+  bottom: 19%;
 }
 
 #main_grid img {

@@ -4,6 +4,8 @@
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @-webkit-keyframes spin {
@@ -29,30 +31,90 @@
 }
 
 @-webkit-keyframes marquee {
-  0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+  from {
+    margin-left: 55%;
+    width: 45%;
   }
-  100% {
-    -webkit-transform: translatex(-100%);
-            transform: translatex(-100%);
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
 @keyframes marquee {
+  from {
+    margin-left: 55%;
+    width: 45%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slider {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
   }
   100% {
-    -webkit-transform: translatex(-100%);
-            transform: translatex(-100%);
+    left: -400%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
   }
 }
 
 body {
   font-family: 'Josefin Sans';
-  color: black;
+  color: white;
   background-color: black;
 }
 
@@ -75,6 +137,7 @@ header {
   background: center url("/images/background.PNG");
   position: relative;
   height: 400px;
+  color: black;
 }
 
 header nav {
@@ -115,13 +178,14 @@ header nav button {
 
 #marquee {
   position: absolute;
-  overflow: none;
+  overflow: hidden;
   font-size: 3em;
   white-space: nowrap;
   -webkit-animation: marquee 13s linear infinite;
           animation: marquee 13s linear infinite;
   color: white;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 iframe {

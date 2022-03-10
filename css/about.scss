@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    box-sizing:border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@600&display=swap');
@@ -17,18 +18,31 @@
 }
 
 @keyframes marquee {
-    0% {
-        transform: translateX(100%);
+    from {
+        margin-left:55%;
+        width:45%;
     }
-    100% {
-        transform: translatex(-100%);
+    to {
+        margin-left:0%;
+        width: 100%;
     }
 }
 
+@keyframes slider {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
 
 body {
     font-family: 'Josefin Sans';
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background-color:black;
 }
 
@@ -49,6 +63,7 @@ header {
     background: center url("/images/background.PNG");
     position:relative;
     height:400px;
+    color:black;
 
     nav {
         width:100%;
@@ -87,12 +102,13 @@ header {
 
 #marquee {
     position:absolute;
-    overflow:none;
+    overflow:hidden;
     font-size:3em;
     white-space:nowrap;
     animation: marquee 13s linear infinite;
     color:white;
     margin-top:10px;
+    margin-bottom:20px;
 }
 
 iframe {
