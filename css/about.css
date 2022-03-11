@@ -245,22 +245,79 @@ header nav button {
   }
 }
 
-iframe {
-  width: 600px;
-  height: 500px;
+#main_grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px auto 200px 100px 650px;
+      grid-template-rows: 100px auto 200px 100px 650px;
 }
 
-.mapouter {
-  position: relative;
-  text-align: right;
+#main_grid #phone {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#main_grid #about {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  font-size: 3rem;
+  padding: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#main_grid #address {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 4rem;
+  padding: 60px;
+}
+
+#main_grid #see_you {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+  font-size: 3rem;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#main_grid .mapouter {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
   height: 500px;
   width: 600px;
 }
 
-.mapouter .gmap_canvas {
+#main_grid .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 500px;
   width: 600px;
+}
+
+#main_grid iframe {
+  width: 600px;
+  height: 500px;
 }
 /*# sourceMappingURL=about.css.map */

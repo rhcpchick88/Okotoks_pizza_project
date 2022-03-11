@@ -5,23 +5,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@600&display=swap');
 
 
+#main_grid{
+    display:grid;
+    grid-template-rows:100px auto 200px 100px 650px;
 
-iframe {
-    width:600px;
-    height:500px;
-}
+    #phone {
+        grid-row-start:1;
+        grid-row-end:2;
+    }
 
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:500px;
-    width:600px;
-    
-    .gmap_canvas {
-        overflow:hidden;
-        background:none!important;
+    #about {
+        grid-row-start:2;
+        grid-row-end:3;
+        font-size:3rem;
+        padding:50px;
+        align-self:center;
+        justify-self:center;
+
+    }
+
+    #address {
+        grid-row-start:3;
+        grid-row-end:4;
+        justify-self:center;
+        align-self:center;
+        text-align:center;
+        font-size:4rem;
+        padding:60px;
+    }
+
+    #see_you {
+        grid-row-start:4;
+        grid-row-end:5;
+        font-size:3rem;
+        text-align:center;
+        align-self:center;
+    }
+
+    .mapouter{
+        grid-row-start:5;
+        grid-row-end:6;
+        align-self:center;
+        justify-self:center;
         height:500px;
         width:600px;
+        
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:500px;
+            width:600px;
+        }
     }
+    
+    iframe {
+        width:600px;
+        height:500px;
+    }
+
 }
+
 
