@@ -10,10 +10,13 @@
 
 @keyframes spin {
     0% {
-        transform:rotate(0deg);
+        transform:rotatey(0deg)
     }
-    100% {
-        transform:rotate(359deg);
+    50% {
+        transform:rotatey(359deg)
+    }
+    100%{
+        transform:rotatey(0deg)
     }
 }
 
@@ -42,16 +45,15 @@ body {
 }
 
 #logo {
-    border-style:none;
-    border-radius: 180px;
-    background-color:none;
+    border:rgba(0, 0, 0, 0.473) 1px solid;
+    border-radius:15px;
     position:fixed;
     top:15px;
     left:20px;
-    box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
-    animation: spin 8s linear infinite;
+    animation: spin 15s linear infinite;
     width: 200px;
     height:200px;
+    background-color:rgba(0, 0, 0, 0.295);
 }
 
 header {

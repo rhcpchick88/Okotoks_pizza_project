@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -275,7 +279,7 @@ header nav button {
 #main_grid .pizza_header {
   position: relative;
   font-family: 'Josefin Sans';
-  font-size: 2.1rem;
+  font-size: 3rem;
   color: white;
   text-align: center;
   padding: 45px;

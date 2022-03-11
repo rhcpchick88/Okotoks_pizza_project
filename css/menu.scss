@@ -6,6 +6,10 @@
     box-sizing:border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@600&display=swap');
 
 @keyframes spin {
@@ -179,7 +183,7 @@ header {
     .pizza_header {
         position:relative;
         font-family:'Josefin Sans';
-        font-size:2.1rem;
+        font-size:3rem;
         color:rgb(255, 255, 255);
         text-align:center;
         padding:45px;

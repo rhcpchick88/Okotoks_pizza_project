@@ -8,6 +8,12 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Josefin Sans';
+  color: white;
+  background-color: black;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -118,12 +124,6 @@
   100% {
     left: -400%;
   }
-}
-
-body {
-  font-family: 'Josefin Sans';
-  color: white;
-  background-color: black;
 }
 
 #logo {
