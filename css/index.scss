@@ -1,128 +1,26 @@
-* {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    box-sizing:border-box;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@600&display=swap');
 
 @import '_main.scss';
-
-@keyframes spin {
-    0% {
-        transform:rotate(0deg);
-    }
-    100% {
-        transform:rotate(359deg);
-    }
-}
-
-@keyframes marquee {
-    0% { left:55%; width:45% }
-    50% { left:1%; width:99%; }
-    100% { left:55%; width: 45%;}
-}
-
-@keyframes slider {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-}
-
-
-#logo {
-    border-style:none;
-    border-radius: 180px;
-    background-color:none;
-    position:fixed;
-    top:15px;
-    left:20px;
-    box-shadow: 0px 0px 3px 0px rgba(128, 128, 128, 0.685);
-    animation: spin 8s linear infinite;
-    width: 200px;
-    height:200px;
-}
-
-header {
-    background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
-    background-repeat:no-repeat;
-    background-size: 1000px;
-    position:relative;
-    height:400px;
-
-    nav {
-        width:100%;
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        position:relative;
-        top:73%;
-        text-align:center;
-
-        button {
-        border-radius:20px;
-        font-family: 'Josefin Sans';
-        color:white;
-        background-color: rgba(0, 0, 0, 0.459);
-        font-size: 4rem;
-        width:75%;
-        padding-top:15px;
-        }
-    }
-}
-
-#welcome {
-    left:22%;
-    top:25%;
-    position:absolute;
-    font-family: 'Josefin Sans';
-    font-size:6rem;
-    text-align:center;
-    background-color: rgba(0, 0, 0, 0.459);
-    border-radius:20px;
-    width:74%;
-    padding-top:7px;
-    padding-bottom:3px;
-}
+@import '_animations.scss';
 
 #main_grid {
     display:grid;
-    grid-template-rows: 50px;
+    grid-template-rows: 100px;
     grid-auto-rows: 650px;
 
+
     #marquee {
-        position:absolute;
-        overflow:hidden;
-        font-size:3em;
-        white-space:nowrap;
-        animation: marquee 13s linear infinite;
-        color:white;
-        margin-top:10px;
-        margin-bottom:20px;
         grid-row-start: 1;
-        grid-row-end: 2;
-
-        a:link {
-            color: rgb(255, 255, 255);
-        }
-
-        a:visited {
-            color:red;
-        }
+        grid-row-end:2;
+        margin-top:30px;
     }
-    
+
     #pizza_gallery { 
         width: 100%;
         overflow: hidden;
         grid-row-start: 2;
         grid-row-end:3;
+        
     
         .pizza_slider { 
             position: relative;

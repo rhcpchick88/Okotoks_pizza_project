@@ -8,6 +8,123 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Josefin Sans';
+  color: white;
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  position: fixed;
+  border-radius: 30px;
+  border: 2px solid black;
+  top: 2%;
+  left: 2%;
+  -webkit-animation: spin 15s linear infinite;
+          animation: spin 15s linear infinite;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.178);
+}
+
+header {
+  background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  position: relative;
+  height: 400px;
+}
+
+header nav {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  top: 73%;
+  text-align: center;
+}
+
+header nav button {
+  border-radius: 20px;
+  font-family: 'Josefin Sans';
+  color: white;
+  background-color: rgba(0, 0, 0, 0.459);
+  font-size: 4rem;
+  width: 75%;
+  padding-top: 15px;
+}
+
+#welcome {
+  left: 24%;
+  top: 25%;
+  position: absolute;
+  font-family: 'Josefin Sans';
+  font-size: 6rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.459);
+  border-radius: 20px;
+  width: 74%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#back_to_top {
+  position: fixed;
+  bottom: 1%;
+  left: 39%;
+  width: auto;
+  height: 62px;
+  padding: 15px;
+  margin: 10px;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#back_to_top a {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Josefin Sans';
+}
+
+#phone {
+  position: absolute;
+  overflow: hidden;
+  font-size: 3em;
+  white-space: nowrap;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#phone a:link {
+  color: white;
+}
+
+#phone_marquee {
+  position: absolute;
+  overflow: hidden;
+  font-size: 3em;
+  white-space: nowrap;
+  -webkit-animation: marquee 13s linear infinite;
+          animation: marquee 13s linear infinite;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#phone_marquee a:link {
+  color: white;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotatey(0deg);
@@ -128,88 +245,6 @@
   }
 }
 
-body {
-  font-family: 'Josefin Sans';
-  color: white;
-  background-color: black;
-}
-
-#logo {
-  border: rgba(0, 0, 0, 0.473) 1px solid;
-  border-radius: 15px;
-  position: fixed;
-  top: 15px;
-  left: 20px;
-  -webkit-animation: spin 15s linear infinite;
-          animation: spin 15s linear infinite;
-  width: 200px;
-  height: 200px;
-  background-color: rgba(0, 0, 0, 0.295);
-}
-
-header {
-  background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  position: relative;
-  height: 400px;
-}
-
-header nav {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  position: relative;
-  top: 73%;
-  text-align: center;
-}
-
-header nav button {
-  border-radius: 20px;
-  font-family: 'Josefin Sans';
-  color: white;
-  background-color: rgba(0, 0, 0, 0.459);
-  font-size: 4rem;
-  width: 75%;
-  padding-top: 15px;
-}
-
-#welcome {
-  left: 22%;
-  top: 25%;
-  position: absolute;
-  font-family: 'Josefin Sans';
-  font-size: 6rem;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.459);
-  border-radius: 20px;
-  width: 74%;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#marquee {
-  position: absolute;
-  overflow: hidden;
-  font-size: 3em;
-  white-space: nowrap;
-  -webkit-animation: marquee 13s linear infinite;
-          animation: marquee 13s linear infinite;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-#marquee a:link {
-  color: white;
-}
-
-#marquee a:visited {
-  color: red;
-}
-
 iframe {
   width: 600px;
   height: 500px;
@@ -227,25 +262,5 @@ iframe {
   background: none !important;
   height: 500px;
   width: 600px;
-}
-
-#back_to_top {
-  position: fixed;
-  bottom: 1%;
-  left: 39%;
-  width: auto;
-  height: 62px;
-  padding: 15px;
-  margin: 10px;
-  background-color: black;
-  border: none;
-  border-radius: 15px;
-  text-align: center;
-}
-
-#back_to_top a {
-  font-size: 2rem;
-  color: white;
-  font-family: 'Josefin Sans';
 }
 /*# sourceMappingURL=about.css.map */

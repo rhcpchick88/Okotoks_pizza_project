@@ -1,120 +1,10 @@
-* {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-    box-sizing:border-box;
-}
+
+@import '_main.scss';
+@import '_animations.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:wght@600&display=swap');
 
-@keyframes spin {
-    0% {
-        transform:rotatey(0deg)
-    }
-    50% {
-        transform:rotatey(359deg)
-    }
-    100%{
-        transform:rotatey(0deg)
-    }
-}
 
-@keyframes marquee {
-    0% { left:55%; width:45% }
-    50% { left:1%; width:99%; }
-    100% { left:55%; width: 45%;}
-}
-
-@keyframes slider {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-}
-
-body {
-    font-family: 'Josefin Sans';
-    color: rgb(255, 255, 255);
-    background-color:black;
-}
-
-#logo {
-    border:rgba(0, 0, 0, 0.473) 1px solid;
-    border-radius:15px;
-    position:fixed;
-    top:15px;
-    left:20px;
-    animation: spin 15s linear infinite;
-    width: 200px;
-    height:200px;
-    background-color:rgba(0, 0, 0, 0.295);
-}
-
-header {
-    background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
-    background-repeat:no-repeat;
-    background-size: 1000px;
-    position:relative;
-    height:400px;
-
-    nav {
-        width:100%;
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        position:relative;
-        top:73%;
-        text-align:center;
-
-        button {
-        border-radius:20px;
-        font-family: 'Josefin Sans';
-        color:white;
-        background-color: rgba(0, 0, 0, 0.459);
-        font-size: 4rem;
-        width:75%;
-        padding-top:15px;
-        }
-    }
-}
-
-#welcome {
-    left:22%;
-    top:25%;
-    position:absolute;
-    font-family: 'Josefin Sans';
-    font-size:6rem;
-    text-align:center;
-    background-color: rgba(0, 0, 0, 0.459);
-    border-radius:20px;
-    width:74%;
-    margin-top:10px;
-    margin-bottom:20px;
-}
-
-#marquee {
-    position:absolute;
-    overflow:hidden;
-    font-size:3em;
-    white-space:nowrap;
-    animation: marquee 13s linear infinite;
-    color:white;
-    margin-top:10px;
-    margin-bottom:20px;
-
-    a:link {
-        color: rgb(255, 255, 255);
-    }
-
-    a:visited {
-        color:red;
-    }
-}
 
 iframe {
     width:600px;
@@ -132,26 +22,6 @@ iframe {
         background:none!important;
         height:500px;
         width:600px;
-    }
-}
-
-#back_to_top {
-    position:fixed;
-    bottom:1%;
-    left:39%;
-    width:auto;
-    height:62px;
-    padding:15px;
-    margin:10px;
-    background-color:black;
-    border:none;
-    border-radius:15px;
-    text-align:center;
-
-    a{
-        font-size:2rem;
-        color:white;
-        font-family:'Josefin Sans';
     }
 }
 
