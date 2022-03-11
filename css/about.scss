@@ -7,7 +7,7 @@
 
 #main_grid{
     display:grid;
-    grid-template-rows:100px auto 200px 100px 650px;
+    grid-template-rows:70px auto 650px 600px;
 
     #phone {
         grid-row-start:1;
@@ -18,37 +18,27 @@
         grid-row-start:2;
         grid-row-end:3;
         font-size:3rem;
-        padding:50px;
+        padding-top:50px;
         align-self:center;
         justify-self:center;
 
+        .about_paragraph {
+            border:solid white 3px;
+            border-radius:30px;
+            padding:20px;
+            margin-bottom:50px;
+
+        }
     }
 
-    #address {
+    
+    .mapouter{
         grid-row-start:3;
         grid-row-end:4;
-        justify-self:center;
-        align-self:center;
-        text-align:center;
-        font-size:4rem;
-        padding:60px;
-    }
-
-    #see_you {
-        grid-row-start:4;
-        grid-row-end:5;
-        font-size:3rem;
-        text-align:center;
-        align-self:center;
-    }
-
-    .mapouter{
-        grid-row-start:5;
-        grid-row-end:6;
         align-self:center;
         justify-self:center;
-        height:500px;
-        width:600px;
+        height:auto;
+        width:auto;
         
         .gmap_canvas {
             overflow:hidden;
@@ -61,6 +51,29 @@
     iframe {
         width:600px;
         height:500px;
+    }
+
+
+    #address {
+        grid-row-start:4;
+        grid-row-end:5;
+        justify-self:center;
+        align-self:center;
+        text-align:center;
+        font-size:4rem;
+        background: linear-gradient(50deg, #ffee00, #97440d, #ff0022, #e89a3e);
+        background-size: 300%;
+        padding:60px;
+        margin-bottom:175px;
+        box-shadow:2px 2px 25px 2px rgba(255, 255, 255, 0.247);
+        animation: colorchange 10s ease-in-out infinite;
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+
+        #see_you {
+            font-size:3rem;
+            padding-top:50px;
+        }
     }
 
 }

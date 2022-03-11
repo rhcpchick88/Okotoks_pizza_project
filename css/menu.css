@@ -245,6 +245,48 @@ header nav button {
   }
 }
 
+@-webkit-keyframes colorchange {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+
+@-webkit-keyframes slide_in {
+  from {
+    left: 200%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes slide_in {
+  from {
+    left: 200%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
 #main_grid {
   display: -ms-grid;
   display: grid;
@@ -253,8 +295,7 @@ header nav button {
       grid-template-rows: 100px;
   grid-auto-rows: 1800px;
   color: white;
-  width: 100%;
-  padding: 2px;
+  padding: 4px;
 }
 
 #main_grid #classic {
@@ -266,6 +307,7 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-bottom: 50px;
 }
 
 #main_grid #veggie {
@@ -277,6 +319,7 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-bottom: 50px;
 }
 
 #main_grid #specialty {
@@ -288,6 +331,7 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-bottom: 50px;
 }
 
 #main_grid #sides {
@@ -299,6 +343,7 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-bottom: 50px;
 }
 
 #main_grid #drinks {
@@ -310,18 +355,20 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
+  margin-bottom: 50px;
 }
 
 #main_grid .pizza_header {
   position: relative;
   font-family: 'Josefin Sans';
-  font-size: 3rem;
+  font-size: 2.6em;
   color: white;
-  text-align: center;
-  padding: 45px;
-  border: solid white 3px;
-  width: 100%;
+  border-top: solid white 3px;
+  border-bottom: solid white 3px;
   background: rgba(0, 0, 0, 0.459);
+  height: 135px;
+  text-align: center;
+  padding-top: 45px;
 }
 
 #main_grid .item_1 {

@@ -10,8 +10,7 @@
     grid-template-rows: 100px;
     grid-auto-rows:1800px;
     color:rgb(255, 255, 255);
-    width:100%;
-    padding:2px;
+    padding:4px;
 
     #classic {
         position:relative;
@@ -21,6 +20,7 @@
         background-repeat:no-repeat;
         background-size:cover;
         background-position-x:center;
+        margin-bottom:50px;
     }
 
     #veggie {
@@ -31,6 +31,7 @@
         background-repeat:no-repeat;
         background-size: cover;
         background-position-x:center;
+        margin-bottom:50px;
     }
         
     #specialty {
@@ -41,6 +42,7 @@
         background-repeat:no-repeat;
         background-size: cover;
         background-position-x:center;
+        margin-bottom:50px;
     }
 
     #sides {
@@ -51,6 +53,7 @@
         background-repeat:no-repeat;
         background-size: cover;
         background-position-x:center;
+        margin-bottom:50px;
     }
 
     #drinks {
@@ -61,18 +64,20 @@
         background-repeat:no-repeat;
         background-size:cover;
         background-position-x:center;
+        margin-bottom:50px;
     }
 
     .pizza_header {
         position:relative;
         font-family:'Josefin Sans';
-        font-size:3rem;
+        font-size:2.6em;
         color:rgb(255, 255, 255);
-        text-align:center;
-        padding:45px;
-        border:solid white 3px;
-        width:100%;
+        border-top: solid white 3px;
+        border-bottom:solid white 3px;
         background:rgba(0, 0, 0, 0.459);
+        height:135px;
+        text-align: center;
+        padding-top:45px;
     }
 
     .item_1 {
