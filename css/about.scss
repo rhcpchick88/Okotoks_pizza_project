@@ -7,22 +7,24 @@
 #main_grid{
     display:grid;
     position:relative;
-    grid-template-rows: auto 650px;
+    grid-template-rows: auto 600px;
 
     #about {
         grid-row-start:1;
         grid-row-end:2;
-        font-size:3rem;
-        padding-top:10px;
-        align-self:center;
-        justify-self:center;
+        font-size:1.5rem;
+        margin:auto;
 
         .about_paragraph {
             border:solid white 3px;
             border-radius:30px;
             padding:20px;
-            margin-bottom:50px;
-
+            margin-bottom:20px;
+        }
+        img {
+            width:100px;
+            position:relative;
+            left:38%;
         }
     }
 
@@ -38,8 +40,8 @@
         .gmap_canvas {
             overflow:hidden;
             background:none!important;
-            height:500px;
-            width:600px;
+            height:450px;
+            width:575px;
         }
     }
     
@@ -51,4 +53,54 @@
 
 #address {
     @include animated_gradient;
+}
+
+
+@media only screen and (min-width:600px) {
+
+    #main_grid{
+        display:grid;
+        position:relative;
+        grid-template-rows: auto 650px;
+    
+        #about {
+            grid-row-start:1;
+            grid-row-end:2;
+            font-size:3rem;
+            padding-top:10px;
+            align-self:center;
+            justify-self:center;
+    
+            .about_paragraph {
+                border:solid white 3px;
+                border-radius:30px;
+                padding:20px;
+                margin-bottom:50px;
+    
+            }
+        }
+    
+        
+        .mapouter{
+            grid-row-start:2;
+            grid-row-end:3;
+            align-self:center;
+            justify-self:center;
+            height:auto;
+            width:auto;
+            
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                height:500px;
+                width:600px;
+            }
+        }
+        
+        iframe {
+            width:600px;
+            height:500px;
+        }
+    }
+
 }

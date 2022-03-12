@@ -368,61 +368,61 @@ footer {
 
 @-webkit-keyframes restaurant_slider {
   0% {
-    right: 0%;
+    left: -400%;
   }
-  20% {
-    right: 0%;
+  5% {
+    left: -300%;
   }
   25% {
-    right: 100%;
+    left: -300%;
   }
-  45% {
-    right: 100%;
+  30% {
+    left: -200%;
   }
   50% {
-    right: 200%;
+    left: -200%;
   }
-  70% {
-    right: 200%;
+  55% {
+    left: -100%;
   }
   75% {
-    right: 300%;
+    left: -100%;
   }
-  95% {
-    right: 300%;
+  80% {
+    left: 0%;
   }
   100% {
-    right: 400%;
+    left: 0%;
   }
 }
 
 @keyframes restaurant_slider {
   0% {
-    right: 0%;
+    left: -400%;
   }
-  20% {
-    right: 0%;
+  5% {
+    left: -300%;
   }
   25% {
-    right: 100%;
+    left: -300%;
   }
-  45% {
-    right: 100%;
+  30% {
+    left: -200%;
   }
   50% {
-    right: 200%;
+    left: -200%;
   }
-  70% {
-    right: 200%;
+  55% {
+    left: -100%;
   }
   75% {
-    right: 300%;
+    left: -100%;
   }
-  95% {
-    right: 300%;
+  80% {
+    left: 0%;
   }
   100% {
-    right: 400%;
+    left: 0%;
   }
 }
 

@@ -368,61 +368,61 @@ footer {
 
 @-webkit-keyframes restaurant_slider {
   0% {
-    right: 0%;
+    left: -400%;
   }
-  20% {
-    right: 0%;
+  5% {
+    left: -300%;
   }
   25% {
-    right: 100%;
+    left: -300%;
   }
-  45% {
-    right: 100%;
+  30% {
+    left: -200%;
   }
   50% {
-    right: 200%;
+    left: -200%;
   }
-  70% {
-    right: 200%;
+  55% {
+    left: -100%;
   }
   75% {
-    right: 300%;
+    left: -100%;
   }
-  95% {
-    right: 300%;
+  80% {
+    left: 0%;
   }
   100% {
-    right: 400%;
+    left: 0%;
   }
 }
 
 @keyframes restaurant_slider {
   0% {
-    right: 0%;
+    left: -400%;
   }
-  20% {
-    right: 0%;
+  5% {
+    left: -300%;
   }
   25% {
-    right: 100%;
+    left: -300%;
   }
-  45% {
-    right: 100%;
+  30% {
+    left: -200%;
   }
   50% {
-    right: 200%;
+    left: -200%;
   }
-  70% {
-    right: 200%;
+  55% {
+    left: -100%;
   }
   75% {
-    right: 300%;
+    left: -100%;
   }
-  95% {
-    right: 300%;
+  80% {
+    left: 0%;
   }
   100% {
-    right: 400%;
+    left: 0%;
   }
 }
 
@@ -454,28 +454,29 @@ footer {
   display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-rows: auto 650px;
-      grid-template-rows: auto 650px;
+  -ms-grid-rows: auto 600px;
+      grid-template-rows: auto 600px;
 }
 
 #main_grid #about {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  font-size: 3rem;
-  padding-top: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  font-size: 1.5rem;
+  margin: auto;
 }
 
 #main_grid #about .about_paragraph {
   border: solid white 3px;
   border-radius: 30px;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+#main_grid #about img {
+  width: 100px;
+  position: relative;
+  left: 38%;
 }
 
 #main_grid .mapouter {
@@ -494,8 +495,8 @@ footer {
 #main_grid .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 500px;
-  width: 600px;
+  height: 450px;
+  width: 575px;
 }
 
 #main_grid iframe {
@@ -510,5 +511,55 @@ footer {
           animation: colorchange 10s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 600px) {
+  #main_grid {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-rows: auto 650px;
+        grid-template-rows: auto 650px;
+  }
+  #main_grid #about {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 3rem;
+    padding-top: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #main_grid #about .about_paragraph {
+    border: solid white 3px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  #main_grid .mapouter {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: auto;
+    width: auto;
+  }
+  #main_grid .mapouter .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+  }
+  #main_grid iframe {
+    width: 600px;
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=about.css.map */
