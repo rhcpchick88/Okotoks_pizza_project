@@ -134,6 +134,17 @@ footer {
   text-align: center;
 }
 
+#address {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 4rem;
+  padding: 60px;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotatey(0deg);
@@ -342,8 +353,8 @@ footer {
   display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-rows: auto 650px 600px;
-      grid-template-rows: auto 650px 600px;
+  -ms-grid-rows: auto 650px;
+      grid-template-rows: auto 650px;
 }
 
 #main_grid #about {
@@ -391,31 +402,12 @@ footer {
   height: 500px;
 }
 
-#main_grid #address {
-  -ms-grid-row: 3;
-      grid-row-start: 3;
-  grid-row-end: 4;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  font-size: 4rem;
-  padding: 60px;
-  margin-bottom: 175px;
+#address {
   background: linear-gradient(50deg, #ffee00, #97440d, #ff0022, #e89a3e);
   background-size: 300%;
   -webkit-animation: colorchange 10s ease-in-out infinite;
           animation: colorchange 10s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-box-shadow: 2px 2px 25px 2px rgba(255, 255, 255, 0.247);
-          box-shadow: 2px 2px 25px 2px rgba(255, 255, 255, 0.247);
-}
-
-#main_grid #address #see_you {
-  font-size: 3rem;
-  padding-top: 50px;
 }
 /*# sourceMappingURL=about.css.map */

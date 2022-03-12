@@ -97,3 +97,7 @@
         font-size:2.3rem;
     }
 }
+
+#address {
+    @include animated_gradient;
+}

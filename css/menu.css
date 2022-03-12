@@ -134,6 +134,17 @@ footer {
   text-align: center;
 }
 
+#address {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 4rem;
+  padding: 60px;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotatey(0deg);
@@ -495,5 +506,14 @@ footer {
   padding: 20px;
   font-family: 'Josefin Sans';
   font-size: 2.3rem;
+}
+
+#address {
+  background: linear-gradient(50deg, #ffee00, #97440d, #ff0022, #e89a3e);
+  background-size: 300%;
+  -webkit-animation: colorchange 10s ease-in-out infinite;
+          animation: colorchange 10s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=menu.css.map */
