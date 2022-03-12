@@ -21,3 +21,10 @@
     background-position-x:center;
 }
 
+@mixin animated_gradient {
+    background: linear-gradient(50deg, #ffee00, #97440d, #ff0022, #e89a3e);
+    background-size: 300%;
+    animation: colorchange 10s ease-in-out infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}

@@ -184,7 +184,7 @@ header nav button {
   }
 }
 
-@-webkit-keyframes slider {
+@-webkit-keyframes pizza_slider {
   0% {
     left: 0%;
   }
@@ -214,7 +214,7 @@ header nav button {
   }
 }
 
-@keyframes slider {
+@keyframes pizza_slider {
   0% {
     left: 0%;
   }
@@ -241,6 +241,66 @@ header nav button {
   }
   100% {
     left: -400%;
+  }
+}
+
+@-webkit-keyframes restaurant_slider {
+  0% {
+    right: 0%;
+  }
+  20% {
+    right: 0%;
+  }
+  25% {
+    right: 100%;
+  }
+  45% {
+    right: 100%;
+  }
+  50% {
+    right: 200%;
+  }
+  70% {
+    right: 200%;
+  }
+  75% {
+    right: 300%;
+  }
+  95% {
+    right: 300%;
+  }
+  100% {
+    right: 400%;
+  }
+}
+
+@keyframes restaurant_slider {
+  0% {
+    right: 0%;
+  }
+  20% {
+    right: 0%;
+  }
+  25% {
+    right: 100%;
+  }
+  45% {
+    right: 100%;
+  }
+  50% {
+    right: 200%;
+  }
+  70% {
+    right: 200%;
+  }
+  75% {
+    right: 300%;
+  }
+  95% {
+    right: 300%;
+  }
+  100% {
+    right: 400%;
   }
 }
 
@@ -335,7 +395,7 @@ header nav button {
 #main_grid .pizza_header {
   position: relative;
   font-family: 'Josefin Sans';
-  font-size: 2.6rem;
+  font-size: 3.2rem;
   color: white;
   border-top: solid white 3px;
   border-bottom: solid white 3px;

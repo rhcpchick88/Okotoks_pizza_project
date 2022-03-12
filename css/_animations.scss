@@ -1,14 +1,8 @@
 
 @keyframes spin {
-    0% {
-        transform:rotatey(0deg)
-    }
-    5% {
-        transform:rotatey(180deg)
-    }
-    10%{
-        transform:rotatey(0deg)
-    }
+    0% {transform:rotatey(0deg)}
+    5% {transform:rotatey(180deg)}
+    10%{transform:rotatey(0deg)}
 }
 
 @keyframes marquee {
@@ -17,7 +11,7 @@
     100% { left:55%; width: 45%;}
 }
 
-@keyframes slider {
+@keyframes pizza_slider {
     0% { left: 0%; }
     20% { left: 0%; }
     25% { left: -100%; }
@@ -27,6 +21,18 @@
     75% { left: -300%; }
     95% { left: -300%; }
     100% { left: -400%; }
+}
+
+@keyframes restaurant_slider {
+    0% { right: 0%; }
+    20% { right: 0%; }
+    25% { right: 100%; }
+    45% { right: 100%; }
+    50% { right: 200%; }
+    70% { right: 200%; }
+    75% { right: 300%; }
+    95% { right: 300%; }
+    100% { right: 400%; }
 }
 
 @keyframes colorchange {
