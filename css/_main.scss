@@ -91,16 +91,28 @@ header {
 
 #phone {
     position:absolute;
+    display:flex;
     overflow:hidden;
     font-size:3em;
-    white-space:nowrap;
     color:white;
-    margin-top:30px;
-    margin-bottom:20px;
-    text-align:center;
+    height:100px;
+    width:auto;
+    align-items:center;
+    left:24%;
 
     a:link {
         color: rgb(255, 255, 255);
+    }
+
+    img {
+        height:50px;
+        width:50px;
+    }
+
+    a {
+        margin-left:2%;
+        margin-top:1%;
+        width:500px;
     }
 }
 

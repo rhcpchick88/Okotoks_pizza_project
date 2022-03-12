@@ -7,15 +7,15 @@
 #main_grid {
     display:grid;
     position:relative;
-    grid-template-rows: 100px;
     grid-auto-rows:1800px;
     color:rgb(255, 255, 255);
     padding:4px;
+    top:100px;
 
     #classic {
         position:relative;
-        grid-row-start: 2;
-        grid-row-end:3;
+        grid-row-start: 1;
+        grid-row-end:2;
         background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
         background-repeat:no-repeat;
         background-size:cover;
@@ -70,7 +70,7 @@
     .pizza_header {
         position:relative;
         font-family:'Josefin Sans';
-        font-size:2.6em;
+        font-size:2.6rem;
         color:rgb(255, 255, 255);
         border-top: solid white 3px;
         border-bottom:solid white 3px;
@@ -177,25 +177,3 @@
         font-size:2.3rem;
     }
 }
-
-#back_to_top {
-    position:fixed;
-    bottom:1%;
-    left:39%;
-    width:auto;
-    height:62px;
-    padding:15px;
-    margin:10px;
-    background-color:black;
-    border:none;
-    border-radius:15px;
-    text-align:center;
-
-    a{
-        font-size:2rem;
-        color:white;
-        font-family:'Josefin Sans';
-    }
-}
-
-

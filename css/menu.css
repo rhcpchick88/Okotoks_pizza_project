@@ -96,17 +96,33 @@ header nav button {
 
 #phone {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
   font-size: 3em;
-  white-space: nowrap;
   color: white;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  text-align: center;
+  height: 100px;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 24%;
 }
 
 #phone a:link {
   color: white;
+}
+
+#phone img {
+  height: 50px;
+  width: 50px;
+}
+
+#phone a {
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 500px;
 }
 
 #phone_marquee {
@@ -269,40 +285,21 @@ header nav button {
   }
 }
 
-@-webkit-keyframes slide_in {
-  from {
-    left: 200%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
-@keyframes slide_in {
-  from {
-    left: 200%;
-  }
-  to {
-    left: 0%;
-  }
-}
-
 #main_grid {
   display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-rows: 100px;
-      grid-template-rows: 100px;
   grid-auto-rows: 1800px;
   color: white;
   padding: 4px;
+  top: 100px;
 }
 
 #main_grid #classic {
   position: relative;
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
   background-image: url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,7 +358,7 @@ header nav button {
 #main_grid .pizza_header {
   position: relative;
   font-family: 'Josefin Sans';
-  font-size: 2.6em;
+  font-size: 2.6rem;
   color: white;
   border-top: solid white 3px;
   border-bottom: solid white 3px;
@@ -451,25 +448,5 @@ header nav button {
   padding: 20px;
   font-family: 'Josefin Sans';
   font-size: 2.3rem;
-}
-
-#back_to_top {
-  position: fixed;
-  bottom: 1%;
-  left: 39%;
-  width: auto;
-  height: 62px;
-  padding: 15px;
-  margin: 10px;
-  background-color: black;
-  border: none;
-  border-radius: 15px;
-  text-align: center;
-}
-
-#back_to_top a {
-  font-size: 2rem;
-  color: white;
-  font-family: 'Josefin Sans';
 }
 /*# sourceMappingURL=menu.css.map */
