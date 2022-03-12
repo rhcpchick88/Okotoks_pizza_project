@@ -16,7 +16,7 @@
 
     #main_grid {
         display:grid;
-        position:absolute;
+        position:relative;
         grid-auto-rows: 300px 800px 700px 800px 400px 900px;
 
         #intro {

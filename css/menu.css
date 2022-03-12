@@ -124,6 +124,16 @@ header nav button {
   color: white;
 }
 
+footer {
+  position: relative;
+  width: 100%;
+  font-size: 1.5rem;
+  width: auto;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotatey(0deg);
