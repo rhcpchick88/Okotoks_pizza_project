@@ -24,8 +24,8 @@ html {
   border: 2px solid black;
   top: 2%;
   left: 2%;
-  -webkit-animation: spin 15s linear infinite;
-          animation: spin 15s linear infinite;
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
   width: 200px;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.178);
@@ -95,34 +95,18 @@ header nav button {
 }
 
 #phone {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
   font-size: 3em;
-  color: white;
-  height: 100px;
+  height: auto;
   width: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 24%;
+  text-align: center;
+}
+
+#phone img {
+  width: 50px;
 }
 
 #phone a:link {
   color: white;
-}
-
-#phone img {
-  height: 50px;
-  width: 50px;
-}
-
-#phone a {
-  margin-left: 2%;
-  margin-top: 1%;
-  width: 500px;
 }
 
 #phone_marquee {
@@ -146,11 +130,11 @@ header nav button {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
-  50% {
-    -webkit-transform: rotatey(359deg);
-            transform: rotatey(359deg);
+  5% {
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
   }
-  100% {
+  10% {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
@@ -161,11 +145,11 @@ header nav button {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
-  50% {
-    -webkit-transform: rotatey(359deg);
-            transform: rotatey(359deg);
+  5% {
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
   }
-  100% {
+  10% {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
@@ -292,7 +276,6 @@ header nav button {
   grid-auto-rows: 1800px;
   color: white;
   padding: 4px;
-  top: 100px;
 }
 
 #main_grid #classic {
@@ -304,10 +287,20 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  margin-bottom: 50px;
 }
 
 #main_grid #veggie {
+  position: relative;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  background-image: url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+}
+
+#main_grid #specialty {
   position: relative;
   -ms-grid-row: 3;
       grid-row-start: 3;
@@ -316,43 +309,28 @@ header nav button {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  margin-bottom: 50px;
-}
-
-#main_grid #specialty {
-  position: relative;
-  -ms-grid-row: 4;
-      grid-row-start: 4;
-  grid-row-end: 5;
-  background-image: url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  margin-bottom: 50px;
 }
 
 #main_grid #sides {
   position: relative;
-  -ms-grid-row: 5;
-      grid-row-start: 5;
-  grid-row-end: 6;
-  background-image: url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url(http://cdn.firstwefeast.com/assets/2014/01/golden.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  margin-bottom: 50px;
 }
 
 #main_grid #drinks {
   position: relative;
-  -ms-grid-row: 6;
-      grid-row-start: 6;
-  grid-row-end: 7;
-  background-image: url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+  background-image: url(http://eapld.org/wp-content/uploads/2016/07/tumblr_mtpq6xMigN1rcbta1o1_500.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-  margin-bottom: 50px;
 }
 
 #main_grid .pizza_header {

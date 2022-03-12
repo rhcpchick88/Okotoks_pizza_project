@@ -22,7 +22,7 @@ html {
     border: 2px solid black;
     top: 2%;
     left:2%;
-    animation: spin 15s linear infinite;
+    animation: spin 4s linear infinite;
     width: 200px;
     height:200px;
     background-color:rgba(0, 0, 0, 0.178);
@@ -90,30 +90,19 @@ header {
 }
 
 #phone {
-    position:absolute;
-    display:flex;
-    overflow:hidden;
     font-size:3em;
-    color:white;
-    height:100px;
+    height:auto;
     width:auto;
-    align-items:center;
-    left:24%;
+    text-align:center;
+
+    img {
+        width:50px;
+    }
 
     a:link {
         color: rgb(255, 255, 255);
     }
 
-    img {
-        height:50px;
-        width:50px;
-    }
-
-    a {
-        margin-left:2%;
-        margin-top:1%;
-        width:500px;
-    }
 }
 
 #phone_marquee {

@@ -24,8 +24,8 @@ html {
   border: 2px solid black;
   top: 2%;
   left: 2%;
-  -webkit-animation: spin 15s linear infinite;
-          animation: spin 15s linear infinite;
+  -webkit-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
   width: 200px;
   height: 200px;
   background-color: rgba(0, 0, 0, 0.178);
@@ -95,34 +95,18 @@ header nav button {
 }
 
 #phone {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
   font-size: 3em;
-  color: white;
-  height: 100px;
+  height: auto;
   width: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 24%;
+  text-align: center;
+}
+
+#phone img {
+  width: 50px;
 }
 
 #phone a:link {
   color: white;
-}
-
-#phone img {
-  height: 50px;
-  width: 50px;
-}
-
-#phone a {
-  margin-left: 2%;
-  margin-top: 1%;
-  width: 500px;
 }
 
 #phone_marquee {
@@ -146,11 +130,11 @@ header nav button {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
-  50% {
-    -webkit-transform: rotatey(359deg);
-            transform: rotatey(359deg);
+  5% {
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
   }
-  100% {
+  10% {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
@@ -161,11 +145,11 @@ header nav button {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
-  50% {
-    -webkit-transform: rotatey(359deg);
-            transform: rotatey(359deg);
+  5% {
+    -webkit-transform: rotatey(180deg);
+            transform: rotatey(180deg);
   }
-  100% {
+  10% {
     -webkit-transform: rotatey(0deg);
             transform: rotatey(0deg);
   }
@@ -288,22 +272,17 @@ header nav button {
 #main_grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 70px auto 650px 600px;
-      grid-template-rows: 70px auto 650px 600px;
-}
-
-#main_grid #phone {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 2;
+  position: relative;
+  -ms-grid-rows: auto 650px 600px;
+      grid-template-rows: auto 650px 600px;
 }
 
 #main_grid #about {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
-  grid-row-end: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
   font-size: 3rem;
-  padding-top: 50px;
+  padding-top: 10px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -319,9 +298,9 @@ header nav button {
 }
 
 #main_grid .mapouter {
-  -ms-grid-row: 3;
-      grid-row-start: 3;
-  grid-row-end: 4;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -344,9 +323,9 @@ header nav button {
 }
 
 #main_grid #address {
-  -ms-grid-row: 4;
-      grid-row-start: 4;
-  grid-row-end: 5;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;

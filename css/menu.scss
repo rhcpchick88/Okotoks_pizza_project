@@ -10,7 +10,6 @@
     grid-auto-rows:1800px;
     color:rgb(255, 255, 255);
     padding:4px;
-    top:100px;
 
     #classic {
         position:relative;
@@ -20,10 +19,19 @@
         background-repeat:no-repeat;
         background-size:cover;
         background-position-x:center;
-        margin-bottom:50px;
     }
 
     #veggie {
+        position:relative;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position-x:center;
+    }
+        
+    #specialty {
         position:relative;
         grid-row-start: 3;
         grid-row-end: 4;
@@ -31,40 +39,26 @@
         background-repeat:no-repeat;
         background-size: cover;
         background-position-x:center;
-        margin-bottom:50px;
-    }
-        
-    #specialty {
-        position:relative;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-position-x:center;
-        margin-bottom:50px;
     }
 
     #sides {
         position:relative;
-        grid-row-start:5;
-        grid-row-end:6;
-        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+        grid-row-start:4;
+        grid-row-end:5;
+        background-image:url(http://cdn.firstwefeast.com/assets/2014/01/golden.gif);
         background-repeat:no-repeat;
         background-size: cover;
         background-position-x:center;
-        margin-bottom:50px;
     }
 
     #drinks {
         position:relative;
-        grid-row-start:6;
-        grid-row-end:7;
-        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+        grid-row-start:5;
+        grid-row-end:6;
+        background-image:url(http://eapld.org/wp-content/uploads/2016/07/tumblr_mtpq6xMigN1rcbta1o1_500.gif);
         background-repeat:no-repeat;
         background-size:cover;
         background-position-x:center;
-        margin-bottom:50px;
     }
 
     .pizza_header {
