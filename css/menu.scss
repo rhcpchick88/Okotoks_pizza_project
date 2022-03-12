@@ -3,6 +3,7 @@
 
 @import '_main.scss';
 @import '_animations.scss';
+@import '_variables.scss';
 
 #main_grid {
     display:grid;
@@ -12,53 +13,38 @@
     padding:4px;
 
     #classic {
-        position:relative;
+        @include menu_sections;
         grid-row-start: 1;
         grid-row-end:2;
         background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position-x:center;
     }
 
     #veggie {
-        position:relative;
+        @include menu_sections;
         grid-row-start: 2;
         grid-row-end: 3;
         background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-position-x:center;
     }
         
     #specialty {
-        position:relative;
+        @include menu_sections;
         grid-row-start: 3;
         grid-row-end: 4;
         background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-position-x:center;
     }
 
     #sides {
-        position:relative;
+        @include menu_sections;
         grid-row-start:4;
         grid-row-end:5;
         background-image:url(http://cdn.firstwefeast.com/assets/2014/01/golden.gif);
-        background-repeat:no-repeat;
-        background-size: cover;
-        background-position-x:center;
     }
 
     #drinks {
-        position:relative;
+        @include menu_sections;
         grid-row-start:5;
         grid-row-end:6;
         background-image:url(http://eapld.org/wp-content/uploads/2016/07/tumblr_mtpq6xMigN1rcbta1o1_500.gif);
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position-x:center;
     }
 
     .pizza_header {
@@ -75,93 +61,33 @@
     }
 
     .item_1 {
-        position:absolute;
-        width:360px;
-        height:480px;
+        @include menu_items;
         left:10%;
         top:12%;
-        font-size:.5rem;
-        text-shadow:
-		-1.5px -1.5px 0 #000,
-		1.5px -1.5px 0 #000,
-		-1.5px 1.5px 0 #000,
-		1.5px 1.5px 0 #000;
-        border:solid rgb(0, 0, 0) 4px;
-        border-radius:15px;
-        box-shadow:5px 5px 30px 30px rgba(0, 0, 0, 0.418);
-        padding:2%;
     }
 
     .item_2 {
-        position:absolute;
-        width:360px;
-        height:480px;
+        @include menu_items;
         left:55%;
         top:12%;
-        font-size:.5rem;
-        text-shadow:
-		-1.5px -1.5px 0 #000,
-		1.5px -1.5px 0 #000,
-		-1.5px 1.5px 0 #000,
-		1.5px 1.5px 0 #000;
-        border:solid rgb(0, 0, 0) 4px;
-        border-radius:15px;
-        box-shadow:5px 5px 30px 30px rgba(0, 0, 0, 0.418);
-        padding:2%;
     }
 
     .item_3 {
-        position:absolute;
-        width:360px;
-        height:480px;
+        @include menu_items;
         bottom:32%;
         left:34%;
-        font-size:.5rem;
-        text-shadow:
-		-1.5px -1.5px 0 #000,
-		1.5px -1.5px 0 #000,
-		-1.5px 1.5px 0 #000,
-		1.5px 1.5px 0 #000;
-        border:solid rgb(0, 0, 0) 4px;
-        border-radius:15px;
-        box-shadow:5px 5px 30px 30px rgba(0, 0, 0, 0.418);
-        padding:2%;
     }
 
     .item_4 {
-        position:absolute;
-        width:360px;
-        height:482px;
+        @include menu_items;
         left:10%;
         bottom:3%;
-        font-size:.5rem;
-        text-shadow:
-		-1.5px -1.5px 0 #000,
-		1.5px -1.5px 0 #000,
-		-1.5px 1.5px 0 #000,
-		1.5px 1.5px 0 #000;
-        border:solid rgb(0, 0, 0) 4px;
-        border-radius:15px;
-        box-shadow:5px 5px 30px 30px rgba(0, 0, 0, 0.418);
-        padding:2%;
     }
 
     .item_5 {
-        position:absolute;
-        width:360px;
-        height:482px;
+        @include menu_items;
         left:55%;
         bottom:3%;
-        font-size:.5rem;
-        text-shadow:
-		-1.5px -1.5px 0 #000,
-		1.5px -1.5px 0 #000,
-		-1.5px 1.5px 0 #000,
-		1.5px 1.5px 0 #000;
-        border:solid rgb(0, 0, 0) 4px;
-        border-radius:15px;
-        box-shadow:5px 5px 30px 30px rgba(0, 0, 0, 0.418);
-        padding:2%;
     }
 
     p {

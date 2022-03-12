@@ -2,6 +2,7 @@
 
 @import '_main.scss';
 @import '_animations.scss';
+@import '_variables.scss';
 
 #main_wrapper {
     display:block;
@@ -50,26 +51,6 @@
                 }
             }
         }
-    }
-}
-
-#back_to_top {
-    position:fixed;
-    bottom:1%;
-    left:39%;
-    width:auto;
-    height:62px;
-    padding:15px;
-    margin:10px;
-    background-color:black;
-    border:none;
-    border-radius:15px;
-    text-align:center;
-
-    a{
-        font-size:2rem;
-        color:white;
-        font-family:'Josefin Sans';
     }
 }
 
