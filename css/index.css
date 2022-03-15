@@ -103,6 +103,10 @@ header nav button {
   padding: 10px;
 }
 
+#phone #desktop {
+  display: none;
+}
+
 #phone img {
   width: 30px;
 }
@@ -132,98 +136,45 @@ footer {
 
 @media only screen and (min-width: 600px) {
   #logo {
-    position: fixed;
-    border-radius: 30px;
     top: 2%;
     left: 2%;
-    -webkit-animation: spin 4s linear infinite;
-            animation: spin 4s linear infinite;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.178);
+    width: 150px;
+    height: 150px;
   }
   header {
-    background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
-    background-repeat: no-repeat;
-    background-size: 1000px;
-    position: relative;
     height: 400px;
   }
   header nav {
-    width: 100%;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-    top: 73%;
-    text-align: center;
+    height: 75px;
+    top: 80%;
   }
   header nav button {
-    border-radius: 20px;
-    font-family: 'Josefin Sans';
-    color: white;
-    background-color: rgba(0, 0, 0, 0.459);
-    font-size: 4rem;
-    width: 75%;
-    padding-top: 15px;
+    padding: 10px;
   }
   #welcome {
-    left: 24%;
-    top: 25%;
-    position: absolute;
-    font-family: 'Josefin Sans';
-    font-size: 6rem;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.459);
-    border-radius: 20px;
-    width: 74%;
+    left: 30%;
+    top: 20%;
+    font-size: 5rem;
+    width: 65%;
     margin-top: 10px;
     margin-bottom: 20px;
   }
   #back_to_top {
-    position: fixed;
-    bottom: 1%;
-    left: 39%;
-    width: auto;
-    height: 62px;
-    padding: 15px;
+    left: 33%;
+    height: 55px;
     margin: 10px;
-    background-color: black;
-    border: none;
-    border-radius: 15px;
-    text-align: center;
   }
   #back_to_top a {
-    font-size: 2rem;
-    color: white;
-    font-family: 'Josefin Sans';
+    font-size: 1.8rem;
   }
-  #phone {
-    font-size: 3em;
-    height: auto;
-    width: auto;
-    text-align: center;
+  #phone #mobile {
+    display: none;
+  }
+  #phone #desktop {
+    display: block;
   }
   #phone img {
-    width: 50px;
-  }
-  #phone a:link {
-    color: white;
-  }
-  #phone_marquee {
-    position: absolute;
-    overflow: hidden;
-    font-size: 3em;
-    white-space: nowrap;
-    -webkit-animation: marquee 13s linear infinite;
-            animation: marquee 13s linear infinite;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  #phone_marquee a:link {
-    color: white;
+    display: none;
   }
   footer {
     position: relative;
@@ -241,8 +192,25 @@ footer {
         -ms-grid-row-align: center;
         align-self: center;
     text-align: center;
-    font-size: 4rem;
-    padding: 60px;
+    font-size: 2rem;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #phone_marquee {
+    position: absolute;
+    overflow: hidden;
+    font-size: 3em;
+    white-space: nowrap;
+    -webkit-animation: marquee 13s linear infinite;
+            animation: marquee 13s linear infinite;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #phone_marquee a:link {
+    color: white;
   }
 }
 
@@ -496,7 +464,7 @@ footer {
 
 #main_wrapper #main_grid #pizza_gallery figure img {
   width: 100%;
-  height: 400px;
+  height: 350px;
   border: solid black 5px;
 }
 
@@ -572,7 +540,7 @@ footer {
 
 #main_wrapper #main_grid #restaurant_gallery figure img {
   width: 100%;
-  height: 400px;
+  height: 350px;
   border: solid black 5px;
 }
 
@@ -605,132 +573,8 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
-  #main_wrapper {
-    display: block;
-    height: auto;
-  }
-  #main_wrapper #phone {
-    margin: 20px;
-    padding-bottom: 20px;
-    border-bottom: solid 1px white;
-  }
-  #main_wrapper #main_grid {
-    display: -ms-grid;
-    display: grid;
-    position: relative;
-    grid-auto-rows: 300px 800px 700px 800px 400px 900px;
-  }
-  #main_wrapper #main_grid #intro {
-    -ms-grid-row: 1;
-        grid-row-start: 1;
-    grid-row-end: 2;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    font-size: 4rem;
-  }
-  #main_wrapper #main_grid #pizza_gallery {
-    width: 100%;
-    overflow: hidden;
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-    grid-row-end: 3;
-    margin: auto;
-  }
-  #main_wrapper #main_grid #pizza_gallery .slider {
-    position: relative;
-    width: 500%;
-    font-size: 0;
-    -webkit-animation: 30s pizza_slider infinite;
-            animation: 30s pizza_slider infinite;
-  }
-  #main_wrapper #main_grid #pizza_gallery .slider figure {
-    width: 20%;
-    height: auto;
-    display: inline-block;
-    position: inherit;
-  }
-  #main_wrapper #main_grid #pizza_gallery .slider figure img {
-    width: 100%;
-    height: 650px;
-    border: solid black 5px;
-  }
-  #main_wrapper #main_grid #pizza_gallery .slider figure figcaption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.63);
-    color: #fff;
-    width: 100%;
-    font-size: 3rem;
-    padding: 10px;
-    text-align: center;
-  }
-  #main_wrapper #main_grid #video_description {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    grid-row-end: 4;
-    font-size: 4rem;
-    width: auto;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-  }
-  #main_wrapper #main_grid #restaurant_video {
-    width: 100%;
-    -ms-grid-row: 4;
-        grid-row-start: 4;
-    grid-row-end: 5;
-  }
-  #main_wrapper #main_grid #restaurant_video iframe {
-    display: block;
-    margin: auto;
-    height: 630px;
-  }
-  #main_wrapper #main_grid #thank_you {
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
-    font-size: 4rem;
-    width: auto;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-  }
-  #main_wrapper #main_grid #restaurant_gallery {
-    width: 100%;
-    overflow: hidden;
-    -ms-grid-row: 6;
-        grid-row-start: 6;
-    grid-row-end: 7;
-    margin: auto;
-  }
-  #main_wrapper #main_grid #restaurant_gallery .slider {
-    position: relative;
-    width: 500%;
-    font-size: 0;
-    -webkit-animation: 30s restaurant_slider infinite;
-            animation: 30s restaurant_slider infinite;
-  }
-  #main_wrapper #main_grid #restaurant_gallery .slider figure {
-    width: 20%;
-    height: auto;
-    display: inline-block;
-    position: inherit;
-  }
-  #main_wrapper #main_grid #restaurant_gallery .slider figure img {
-    width: 100%;
-    height: 650px;
-    border: solid black 5px;
-  }
-  #main_wrapper #main_grid #restaurant_gallery .slider figure figcaption {
-    position: absolute;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.63);
-    color: #fff;
-    width: 100%;
-    font-size: 3rem;
-    padding: 10px;
-    text-align: center;
+  #main_grid {
+    grid-auto-rows: 200px 300px 500px 300px 250px 500px;
   }
 }
 /*# sourceMappingURL=index.css.map */

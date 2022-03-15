@@ -1,3 +1,5 @@
+
+
 @mixin menu_items {
     position:absolute;
     display:inline-flex;
@@ -40,34 +42,21 @@
     -webkit-text-fill-color:transparent;
 }
 
-@media only screen and (min-width:600px) {
+@mixin menu_items_tablet {
+    width: 200px;
+    height:320px;
 
-    @mixin menu_items {
-        position:absolute;
-        width:360px;
-        height:480px;
-        font-size:.5rem;
-        text-shadow:
-        -1.5px -1.5px 0 #000,
-        1.5px -1.5px 0 #000,
-        -1.5px 1.5px 0 #000,
-        1.5px 1.5px 0 #000;
-        border:solid rgb(0, 0, 0) 4px;
-        border-radius:15px;
-        box-shadow:5px 5px 30px 30px rgba(0, 0, 0, 0.418);
-        padding:2%;
+    p {
+        font-size:2rem;
     }
 
-    @mixin menu_sections {
-        position:relative;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-position-x:center;
+    img {
+        width:175px;
     }
 
 }
 
-@mixin gallery {
+@mixin gallery_tablet {
     figure { 
         width: 20%;
         height: auto;
@@ -76,7 +65,7 @@
 
         img {
             width: 100%;
-            height: 400px;
+            height: 350px;
             border: solid black 5px;
         }
 
@@ -92,3 +81,4 @@
         }
     }
 }
+
