@@ -24,15 +24,15 @@
 }
 
 @keyframes restaurant_slider {
-    0% { right: 0%; }
-    20% { right: 0%; }
-    25% { right: 100%; }
-    45% { right: 100%; }
-    50% { right: 200%; }
-    70% { right: 200%; }
-    75% { right: 300%; }
-    95% { right: 300%; }
-    100% { right: 400%; }
+    0% { left: -400%; }
+    5% { left: -300%; }
+    25% { left: -300%; }
+    30% { left: -200%; }
+    50% { left: -200%; }
+    55% { left: -100%; }
+    75% { left: -100%; }
+    80% { left: 0%; }
+    100% { left: 0%; }
 }
 
 @keyframes colorchange {

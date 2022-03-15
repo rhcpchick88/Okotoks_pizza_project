@@ -19,102 +19,231 @@ html {
 #logo {
     position:fixed;
     border-radius:30px;
-    top: 2%;
-    left:2%;
+    top: 3%;
+    left:3%;
     animation: spin 4s linear infinite;
-    width: 200px;
-    height:200px;
+    width: 100px;
+    height:100px;
     background-color:rgba(0, 0, 0, 0.178);
 }
 
 header {
     background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
     background-repeat:no-repeat;
-    background-size: 1000px;
+    background-size: cover;
     position:relative;
-    height:400px;
+    height:240px;
 
     nav {
-        width:100%;
         display:grid;
+        width:100%;
+        height:60px;
         grid-template-columns: 1fr 1fr 1fr;
         position:relative;
-        top:73%;
+        top:75%;
         text-align:center;
+        padding:4px;
 
         button {
         border-radius:20px;
         font-family: 'Josefin Sans';
         color:white;
         background-color: rgba(0, 0, 0, 0.459);
-        font-size: 4rem;
+        font-size: 2rem;
         width:75%;
-        padding-top:15px;
+        padding-top:8px;
+        transform:translateY(10%);
         }
     }
 }
 
 #welcome {
-    left:24%;
-    top:25%;
+    left:35%;
+    top:15%;
     position:absolute;
     font-family: 'Josefin Sans';
-    font-size:6rem;
+    font-size:3rem;
     text-align:center;
     background-color: rgba(0, 0, 0, 0.459);
     border-radius:20px;
-    width:74%;
-    margin-top:10px;
-    margin-bottom:20px;
+    width:60%;
+    padding:10px;
 }
 
 #back_to_top {
     position:fixed;
-    bottom:1%;
-    left:39%;
+    bottom:5px;
+    left:34%;
     width:auto;
-    height:62px;
-    padding:15px;
-    margin:10px;
+    height:auto;
+    padding:10px;
     background-color:black;
     border:none;
     border-radius:15px;
     text-align:center;
 
-    a{
-        font-size:2rem;
+    a {
+        font-size:1.2rem;
         color:white;
         font-family:'Josefin Sans';
     }
 }
 
 #phone {
-    font-size:3em;
+    font-size:2em;
     height:auto;
     width:auto;
     text-align:center;
+    padding:10px;
 
     img {
-        width:50px;
+        width:30px;
     }
 
     a:link {
         color: rgb(255, 255, 255);
     }
-
 }
 
-#phone_marquee {
-    position:absolute;
-    overflow:hidden;
-    font-size:3em;
-    white-space:nowrap;
-    animation: marquee 13s linear infinite;
-    color:white;
-    margin-top:10px;
-    margin-bottom:20px;
 
-    a:link {
-        color: rgb(255, 255, 255);
+footer{
+    position:relative;
+    width:100%;
+    width:auto;
+    margin:10px 10px 50px 10px;
+    text-align:center;
+    
+}
+
+#address {
+    justify-self:center;
+    align-self:center;
+    text-align:center;
+    font-size:1.5rem;
+    padding:15px;
+}
+
+@media only screen and (min-width:600px) {
+
+    #logo {
+        position:fixed;
+        border-radius:30px;
+        top: 2%;
+        left:2%;
+        animation: spin 4s linear infinite;
+        width: 200px;
+        height:200px;
+        background-color:rgba(0, 0, 0, 0.178);
+    }
+
+    header {
+        background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+        background-repeat:no-repeat;
+        background-size: 1000px;
+        position:relative;
+        height:400px;
+    
+        nav {
+            width:100%;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            position:relative;
+            top:73%;
+            text-align:center;
+    
+            button {
+            border-radius:20px;
+            font-family: 'Josefin Sans';
+            color:white;
+            background-color: rgba(0, 0, 0, 0.459);
+            font-size: 4rem;
+            width:75%;
+            padding-top:15px;
+            }
+        }
+    }
+
+    #welcome {
+        left:24%;
+        top:25%;
+        position:absolute;
+        font-family: 'Josefin Sans';
+        font-size:6rem;
+        text-align:center;
+        background-color: rgba(0, 0, 0, 0.459);
+        border-radius:20px;
+        width:74%;
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+
+    #back_to_top {
+        position:fixed;
+        bottom:1%;
+        left:39%;
+        width:auto;
+        height:62px;
+        padding:15px;
+        margin:10px;
+        background-color:black;
+        border:none;
+        border-radius:15px;
+        text-align:center;
+    
+        a{
+            font-size:2rem;
+            color:white;
+            font-family:'Josefin Sans';
+        }
+    }
+
+    #phone {
+        font-size:3em;
+        height:auto;
+        width:auto;
+        text-align:center;
+    
+        img {
+            width:50px;
+        }
+    
+        a:link {
+            color: rgb(255, 255, 255);
+        }
+    
+    }
+    
+    #phone_marquee {
+        position:absolute;
+        overflow:hidden;
+        font-size:3em;
+        white-space:nowrap;
+        animation: marquee 13s linear infinite;
+        color:white;
+        margin-top:10px;
+        margin-bottom:20px;
+    
+        a:link {
+            color: rgb(255, 255, 255);
+        }
+    }
+
+    footer{
+        position:relative;
+        width:100%;
+        font-size:1.5rem;
+        width:auto;
+        margin:auto;
+        padding:10px;
+        text-align:center;
+        
+    }
+    
+    #address {
+        justify-self:center;
+        align-self:center;
+        text-align:center;
+        font-size:4rem;
+        padding:60px;
     }
 }

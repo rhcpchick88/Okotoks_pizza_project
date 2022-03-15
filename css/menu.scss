@@ -8,7 +8,7 @@
 #main_grid {
     display:grid;
     position:relative;
-    grid-auto-rows:1800px;
+    grid-auto-rows:900px;
     color:rgb(255, 255, 255);
     padding:4px;
 
@@ -50,6 +50,238 @@
     .pizza_header {
         position:relative;
         font-family:'Josefin Sans';
+        font-size:1.5rem;
+        color:rgb(255, 255, 255);
+        border-top: solid white 3px;
+        border-bottom:solid white 4px;
+        background:rgba(0, 0, 0, 0.459);
+        height:120px;
+        text-align: center;
+
+        p {
+            text-align:center;
+            font-size:2rem;
+        }
+
+    }
+
+    .other_header {
+        position:relative;
+        font-family:'Josefin Sans';
+        font-size:1.5rem;
+        color:rgb(255, 255, 255);
+        border-top: solid white 3px;
+        border-bottom:solid white 3px;
+        background:rgba(0, 0, 0, 0.459);
+        height:120px;
+        text-align: center;
+
+        P {
+            transform:translateY(35%);
+        }
+    }
+
+    .item_1 {
+        @include menu_items;
+        left:7%;
+        top:17%;
+    }
+
+    .item_2 {
+        @include menu_items;
+        left:55%;
+        top:17%;
+    }
+
+    .item_3 {
+        @include menu_items;
+        bottom:30%;
+        left:31%;
+    }
+
+    .item_4 {
+        @include menu_items;
+        left:7%;
+        bottom:2%;
+    }
+
+    .item_5 {
+        @include menu_items;
+        left:55%;
+        bottom:2%;
+    }
+
+    p {
+        text-align:center;
+        padding:20px;
+        font-family:'Josefin Sans';
+        font-size:2.3rem;
+    }
+}
+
+#address {
+    @include animated_gradient;
+}
+
+@media only screen and (min-width:600px) {
+
+    #main_grid {
+        display:grid;
+        position:relative;
+        grid-auto-rows:1800px;
+        color:rgb(255, 255, 255);
+        padding:4px;
+    
+        #classic {
+            @include menu_sections;
+            grid-row-start: 1;
+            grid-row-end:2;
+            background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+        }
+    
+        #veggie {
+            @include menu_sections;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+        }
+            
+        #specialty {
+            @include menu_sections;
+            grid-row-start: 3;
+            grid-row-end: 4;
+            background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+        }
+    
+        #sides {
+            @include menu_sections;
+            grid-row-start:4;
+            grid-row-end:5;
+            background-image:url(http://cdn.firstwefeast.com/assets/2014/01/golden.gif);
+        }
+    
+        #drinks {
+            @include menu_sections;
+            grid-row-start:5;
+            grid-row-end:6;
+            background-image:url(http://eapld.org/wp-content/uploads/2016/07/tumblr_mtpq6xMigN1rcbta1o1_500.gif);
+        }
+    
+        .pizza_header {
+            position:relative;
+            font-family:'Josefin Sans';
+            font-size:2rem;
+            color:rgb(255, 255, 255);
+            border-top: solid white 3px;
+            border-bottom:solid white 3px;
+            background:rgba(0, 0, 0, 0.459);
+            height:135px;
+            text-align: center;
+            padding-top:45px;
+        }
+    
+        .item_1 {
+            @include menu_items;
+            left:10%;
+            top:12%;
+        }
+    
+        .item_2 {
+            @include menu_items;
+            left:55%;
+            top:12%;
+        }
+    
+        .item_3 {
+            @include menu_items;
+            bottom:32%;
+            left:34%;
+        }
+    
+        .item_4 {
+            @include menu_items;
+            left:10%;
+            bottom:3%;
+        }
+    
+        .item_5 {
+            @include menu_items;
+            left:55%;
+            bottom:3%;
+        }
+    
+        p {
+            text-align:center;
+            padding:20px;
+            font-family:'Josefin Sans';
+            font-size:2.3rem;
+        }
+    }
+    
+
+
+
+}
+
+@media only screen and (min-width:1000px) {
+
+#main_grid {
+    display:grid;
+    position:relative;
+    grid-auto-rows:1800px;
+    grid-template-columns: 1fr 1fr;
+    color:rgb(255, 255, 255);
+    padding:4px;
+
+    #classic {
+        @include menu_sections;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start: 1;
+        grid-row-end:2;
+        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+    }
+
+    #veggie {
+        @include menu_sections;
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+    }
+        
+    #specialty {
+        @include menu_sections;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-image:url(https://i.pinimg.com/originals/8f/5f/0a/8f5f0a33641b298e2029d80747148dad.gif);
+    }
+
+    #sides {
+        @include menu_sections;
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:4;
+        grid-row-end:5;
+        background-image:url(http://cdn.firstwefeast.com/assets/2014/01/golden.gif);
+    }
+
+    #drinks {
+        @include menu_sections;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start:5;
+        grid-row-end:6;
+        background-image:url(http://eapld.org/wp-content/uploads/2016/07/tumblr_mtpq6xMigN1rcbta1o1_500.gif);
+    }
+
+    .pizza_header {
+        display:none;
+        position:relative;
+        font-family:'Josefin Sans';
         font-size:3.2rem;
         color:rgb(255, 255, 255);
         border-top: solid white 3px;
@@ -58,6 +290,12 @@
         height:135px;
         text-align: center;
         padding-top:45px;
+
+        p {
+            display:none;
+        }
+
+
     }
 
     .item_1 {
@@ -96,4 +334,5 @@
         font-family:'Josefin Sans';
         font-size:2.3rem;
     }
+}
 }

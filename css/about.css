@@ -21,32 +21,34 @@ html {
 #logo {
   position: fixed;
   border-radius: 30px;
-  top: 2%;
-  left: 2%;
+  top: 3%;
+  left: 3%;
   -webkit-animation: spin 4s linear infinite;
           animation: spin 4s linear infinite;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: rgba(0, 0, 0, 0.178);
 }
 
 header {
   background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
   background-repeat: no-repeat;
-  background-size: 1000px;
+  background-size: cover;
   position: relative;
-  height: 400px;
+  height: 240px;
 }
 
 header nav {
-  width: 100%;
   display: -ms-grid;
   display: grid;
+  width: 100%;
+  height: 60px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   position: relative;
-  top: 73%;
+  top: 75%;
   text-align: center;
+  padding: 4px;
 }
 
 header nav button {
@@ -54,33 +56,33 @@ header nav button {
   font-family: 'Josefin Sans';
   color: white;
   background-color: rgba(0, 0, 0, 0.459);
-  font-size: 4rem;
+  font-size: 2rem;
   width: 75%;
-  padding-top: 15px;
+  padding-top: 8px;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
 }
 
 #welcome {
-  left: 24%;
-  top: 25%;
+  left: 35%;
+  top: 15%;
   position: absolute;
   font-family: 'Josefin Sans';
-  font-size: 6rem;
+  font-size: 3rem;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.459);
   border-radius: 20px;
-  width: 74%;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  width: 60%;
+  padding: 10px;
 }
 
 #back_to_top {
   position: fixed;
-  bottom: 1%;
-  left: 39%;
+  bottom: 5px;
+  left: 34%;
   width: auto;
-  height: 62px;
-  padding: 15px;
-  margin: 10px;
+  height: auto;
+  padding: 10px;
   background-color: black;
   border: none;
   border-radius: 15px;
@@ -88,40 +90,160 @@ header nav button {
 }
 
 #back_to_top a {
-  font-size: 2rem;
+  font-size: 1.2rem;
   color: white;
   font-family: 'Josefin Sans';
 }
 
 #phone {
-  font-size: 3em;
+  font-size: 2em;
   height: auto;
   width: auto;
   text-align: center;
+  padding: 10px;
 }
 
 #phone img {
-  width: 50px;
+  width: 30px;
 }
 
 #phone a:link {
   color: white;
 }
 
-#phone_marquee {
-  position: absolute;
-  overflow: hidden;
-  font-size: 3em;
-  white-space: nowrap;
-  -webkit-animation: marquee 13s linear infinite;
-          animation: marquee 13s linear infinite;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 20px;
+footer {
+  position: relative;
+  width: 100%;
+  width: auto;
+  margin: 10px 10px 50px 10px;
+  text-align: center;
 }
 
-#phone_marquee a:link {
-  color: white;
+#address {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  #logo {
+    position: fixed;
+    border-radius: 30px;
+    top: 2%;
+    left: 2%;
+    -webkit-animation: spin 4s linear infinite;
+            animation: spin 4s linear infinite;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.178);
+  }
+  header {
+    background: center url(https://thumbs.gfycat.com/ShimmeringQuestionableChicken-size_restricted.gif);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    position: relative;
+    height: 400px;
+  }
+  header nav {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top: 73%;
+    text-align: center;
+  }
+  header nav button {
+    border-radius: 20px;
+    font-family: 'Josefin Sans';
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
+    font-size: 4rem;
+    width: 75%;
+    padding-top: 15px;
+  }
+  #welcome {
+    left: 24%;
+    top: 25%;
+    position: absolute;
+    font-family: 'Josefin Sans';
+    font-size: 6rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+    width: 74%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #back_to_top {
+    position: fixed;
+    bottom: 1%;
+    left: 39%;
+    width: auto;
+    height: 62px;
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+  }
+  #back_to_top a {
+    font-size: 2rem;
+    color: white;
+    font-family: 'Josefin Sans';
+  }
+  #phone {
+    font-size: 3em;
+    height: auto;
+    width: auto;
+    text-align: center;
+  }
+  #phone img {
+    width: 50px;
+  }
+  #phone a:link {
+    color: white;
+  }
+  #phone_marquee {
+    position: absolute;
+    overflow: hidden;
+    font-size: 3em;
+    white-space: nowrap;
+    -webkit-animation: marquee 13s linear infinite;
+            animation: marquee 13s linear infinite;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #phone_marquee a:link {
+    color: white;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    font-size: 1.5rem;
+    width: auto;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+  }
+  #address {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    font-size: 4rem;
+    padding: 60px;
+  }
 }
 
 @-webkit-keyframes spin {
@@ -246,61 +368,61 @@ header nav button {
 
 @-webkit-keyframes restaurant_slider {
   0% {
-    right: 0%;
+    left: -400%;
   }
-  20% {
-    right: 0%;
+  5% {
+    left: -300%;
   }
   25% {
-    right: 100%;
+    left: -300%;
   }
-  45% {
-    right: 100%;
+  30% {
+    left: -200%;
   }
   50% {
-    right: 200%;
+    left: -200%;
   }
-  70% {
-    right: 200%;
+  55% {
+    left: -100%;
   }
   75% {
-    right: 300%;
+    left: -100%;
   }
-  95% {
-    right: 300%;
+  80% {
+    left: 0%;
   }
   100% {
-    right: 400%;
+    left: 0%;
   }
 }
 
 @keyframes restaurant_slider {
   0% {
-    right: 0%;
+    left: -400%;
   }
-  20% {
-    right: 0%;
+  5% {
+    left: -300%;
   }
   25% {
-    right: 100%;
+    left: -300%;
   }
-  45% {
-    right: 100%;
+  30% {
+    left: -200%;
   }
   50% {
-    right: 200%;
+    left: -200%;
   }
-  70% {
-    right: 200%;
+  55% {
+    left: -100%;
   }
   75% {
-    right: 300%;
+    left: -100%;
   }
-  95% {
-    right: 300%;
+  80% {
+    left: 0%;
   }
   100% {
-    right: 400%;
+    left: 0%;
   }
 }
 
@@ -332,28 +454,29 @@ header nav button {
   display: -ms-grid;
   display: grid;
   position: relative;
-  -ms-grid-rows: auto 650px 600px;
-      grid-template-rows: auto 650px 600px;
+  -ms-grid-rows: auto 600px;
+      grid-template-rows: auto 600px;
 }
 
 #main_grid #about {
   -ms-grid-row: 1;
       grid-row-start: 1;
   grid-row-end: 2;
-  font-size: 3rem;
-  padding-top: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  font-size: 1.5rem;
+  margin: auto;
 }
 
 #main_grid #about .about_paragraph {
   border: solid white 3px;
   border-radius: 30px;
   padding: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+#main_grid #about img {
+  width: 100px;
+  position: relative;
+  left: 38%;
 }
 
 #main_grid .mapouter {
@@ -372,8 +495,8 @@ header nav button {
 #main_grid .mapouter .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 500px;
-  width: 600px;
+  height: 450px;
+  width: 575px;
 }
 
 #main_grid iframe {
@@ -381,31 +504,62 @@ header nav button {
   height: 500px;
 }
 
-#main_grid #address {
-  -ms-grid-row: 3;
-      grid-row-start: 3;
-  grid-row-end: 4;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  font-size: 4rem;
-  padding: 60px;
-  margin-bottom: 175px;
+#address {
   background: linear-gradient(50deg, #ffee00, #97440d, #ff0022, #e89a3e);
   background-size: 300%;
   -webkit-animation: colorchange 10s ease-in-out infinite;
           animation: colorchange 10s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-box-shadow: 2px 2px 25px 2px rgba(255, 255, 255, 0.247);
-          box-shadow: 2px 2px 25px 2px rgba(255, 255, 255, 0.247);
 }
 
-#main_grid #address #see_you {
-  font-size: 3rem;
-  padding-top: 50px;
+@media only screen and (min-width: 600px) {
+  #main_grid {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-rows: auto 650px;
+        grid-template-rows: auto 650px;
+  }
+  #main_grid #about {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 3rem;
+    padding-top: 10px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  #main_grid #about .about_paragraph {
+    border: solid white 3px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  #main_grid .mapouter {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    height: auto;
+    width: auto;
+  }
+  #main_grid .mapouter .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 600px;
+  }
+  #main_grid iframe {
+    width: 600px;
+    height: 500px;
+  }
 }
 /*# sourceMappingURL=about.css.map */
